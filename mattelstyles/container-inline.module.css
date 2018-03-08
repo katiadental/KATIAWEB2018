@@ -11,3 +11,85 @@
 .container-inline .details-wrapper {
   display: block;
 }
+
+/**
+ * @file
+ * Alignment classes for text and block level elements.
+ */
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-justify {
+  text-align: justify;
+}
+
+/**
+ * Alignment classes for block level elements (images, videos, blockquotes, etc.)
+ */
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/**
+ * @file
+ * Fieldgroup border reset.
+ */
+
+.fieldgroup {
+  border-width: 0;
+  padding: 0;
+}
+
+/**
+ * @file
+ * Float clearing.
+ *
+ * Based on the micro clearfix hack by Nicolas Gallagher, with the :before
+ * pseudo selector removed to allow normal top margin collapse.
+ *
+ * @see http://nicolasgallagher.com/micro-clearfix-hack
+ */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/**
+ * @file
+ * Styles for item list.
+ */
+
+.item-list__comma-list,
+.item-list__comma-list li {
+  display: inline;
+}
+.item-list__comma-list {
+  margin: 0;
+  padding: 0;
+}
+.item-list__comma-list li:after {
+  content: ", ";
+}
+.item-list__comma-list li:last-child:after {
+  content: "";
+}
+
