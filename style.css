@@ -1,0 +1,139 @@
+
+.wrapper {text-align:center; margin: 0; padding:0; background-color:#365984;  }
+
+ul{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+display: inline-block;
+z-index:9999;
+
+}
+
+li{
+	display: inline-block;
+	float: left;
+	/*margin: 01px;*/
+}
+
+li a{
+	display: block;
+	min-width: 9rem;
+	height: 3rem;
+	font-family: Verdana;
+	color: #fff;
+	background: #365984;
+	line-height: 3rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a:hover{
+	background: rgba(0,191,255,0.7);
+	color: #fff;
+}
+
+li:hover ul li a{ font-size: 13px;
+	height: 2.857rem;
+	line-height: 2.857rem;
+	min-width: 9rem;
+	/*transition: 1s;*/
+}
+
+li ul{
+	display: none;
+}
+
+li ul li{
+	display: block;
+	float: none;
+}
+
+li ul li a{
+	width: auto;
+	min-width: 100px;
+	padding: 0; 
+	background-color: rgba(222, 222, 222,0.9);
+	color: #575757;
+}
+
+ul li a:hover+.hide,.hide:hover{
+	display: block;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"]:checked~#menu{
+	display: block;
+}
+
+.show-menu{
+	font-family: Verdana;
+	text-decoration: none;
+	color: #fff;
+	background: black;
+	text-align: center;
+	padding: 10px 0 px;
+	display: none;
+	line-height: 40px;
+}
+
+
+.logo img{height:4rem;
+width:auto;
+display:block;
+padding:5px 10px; position:absolute; z-index:9999;
+}
+
+.login{position:absolute;
+right:1rem; display:inline-block;
+/*border-left:solid #f5f5f5 1px*/}
+
+.login:hover svg,.header-login a:hover svg path,.header-login a:hover,.header-login svg:hover{fill:#ec3432}
+
+.login svg,.header-login{
+/*width:40px;*/
+height:40px}
+
+.login svg{
+fill:#989da1;
+padding-top:13px}
+
+
+@media screen and (max-width: 760px){
+
+	ul{
+		position: static;
+		display: none;
+		z-index:9999;
+top: 45px;
+	}
+
+	li{
+		margin-bottom: 01px;
+		z-index:9999;
+	}
+
+	ul li, li a{
+		width: 100%;
+		z-index:9999;
+	}
+
+	.show-menu{
+		display: block;
+		z-index:9999;
+		height: 3.5rem;
+		line-height: 60px;
+		padding-right: 80px;
+text-align: right;
+	}
+
+.diapos {display:none;}
+
+.logo img{height:3rem;
+
+}
+}
