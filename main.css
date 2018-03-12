@@ -51,44 +51,40 @@ font-style:normal;
 font-size:14px;
 z-index:1000}
 
-.header .logo img{height:50px;
-width:auto;
+.header .logo img{
+height:auto;
+width:11rem;
 display:block;
 padding:0;
-width:100%; 
+z-index:10000;
+margin:0.4rem 0 0 1rem;
 }
 
-.header .logo{display:inline-block;
-/*border-left:solid #f5f5f5 1px;
-border-right:solid #f5f5f5 1px;*/
-margin:0.4rem 0 0 1rem;
-padding:0}
-
-.header .menu, .menu-header{
+/*.header .menu, .menu-header{
 display:inline-block;
 }
-
+/*MENUPOPUP STYLE*/
 .header .menu a{color:#989da1;
 text-decoration:none;
 text-transform:uppercase;
 }
-
-.header .menu a:hover{color:#3d454c}
+/*MENU TEXT STYLE*/
+.header .menu a:hover{color:#ffffff;}
 
 .header .menu .current_page_item a,.header .menu .current-page-ancestor a{color:#3d454c}
 
 .header .menu li{display:block;
 float:left;
 line-height: 3rem;
-padding:0 20px}
+padding:0 20px; }
 
 .header-login{position:absolute;
-right:0; display:inline-block;
+right:1rem; display:inline-block;
 /*border-left:solid #f5f5f5 1px*/}
 
-.header-login:hover svg,.header-login a:hover svg path,.header-login a:hover,.header-login svg:hover{fill:#ec3432}
+.header-login:hover svg, .header-login a:hover svg path, .header-login a:hover, .header-login svg:hover{fill:blue}
 
-.header-login svg,.header-login{
+.header-login svg, .header-login{
 /*width:40px;*/
 height:40px}
 
@@ -96,81 +92,103 @@ height:40px}
 fill:#989da1;
 padding-top:13px}
 
-.btn{background:#3d454c;
+.btn{background:green;
 color:#fff}
 
-.mobile-nav{display:none}
+.mobile-nav {display:block; z-index:1000;}
 
+.diapos {height:22rem; position:relative; left:0px; width:1300px; overflow:hidden; }
 
 @media(max-width:56em){
-.mobile-nav{display:block;
-z-index:1000}
+
+
 .menu-header{display:none}
-.header-login{display:none}}
+.diapos { height: 50rem;}
+
+}
 
 
 .menu-btn{position:absolute;
 display:inline-block;
-right:20px;
-top:20px;
+right:5rem;
+top:1.33rem;
 cursor:pointer}
-.menu-btn div{position:absolute;
+
+.menu-btn div{
+position:absolute;
 left:100%;
 top:64%;
-padding-right:8px;
+padding-right:0.6rem;
 margin-top:-.5em;
 line-height:1.2;
-font-size:18px;
+font-size:12px;
 font-weight:200;
 vertical-align:middle;
 z-index:99}
+
+/*HAMBURGER STYLE*/
 .menu-btn span{display:block;
-width:20px;
+width:1.3rem;
 height:2px;
 margin:4px 0;
 background:#989da1;
 z-index:99}
-.responsive-menu{display:none;
+/*MENU STYLE*/
+.responsive-menu{
+display:none;
 position:absolute;
 right:0;
-top:60px;
-font-size:22px;
+top:4.35rem;
+font-size:14px;
 border-bottom:#ededed solid 1px;
 border-left:#ededed solid 1px;
 -webkit-box-shadow:0 2px 2px 0 #f5f5f5;
 -moz-box-shadow:0 2px 2px 0 #f5f5f5;
 box-shadow:0 2px 2px 0 #f5f5f5;
 border-top:#ededed solid 1px;
-width:320px;
+width:15rem;
 box-sizing:border-box;
-background:#fff}
+background:#fff;
+}
+/*––––––––––––––––––––––*/
 .responsive-menu .menu-header{display:block}
 .responsive-menu .menu-header ul{background:#fff;
 position:relative;
 display:block}
+/*MENU BACKGROUND*/
 .responsive-menu .menu-header li{background:#fff;
 float:none;
-line-height:55px;
+line-height:3.3rem;
 width:100%;
 text-align:center;
 border-bottom:#ededed solid 1px;
 position:relative;
 padding:0}
+.responsive-menu .menu-header li:hover { background-color:#61CBFF;}
 .responsive-menu .menu-header li:last-child{border-bottom:0}
 .expand{display:block!important}
+/*SUBMENU STYLE*/
 .responsive-menu .menu-header li .sub-menu{display:none;
-font-size:16px}
+font-size:13px}
 .responsive-menu .menu-header li .sub-menu li{border-bottom:0;
-line-height:35px}
+line-height:2.5rem}
+/*+ - STYLE*/
 .open-menu-link{display:none;
 position:absolute;
-right:15px;
+right:1.2rem;
 top:0;
-line-height:55px;
+line-height:2.8rem;
 color:#989da1;
-font-size:30px;
+font-size:24px;
 cursor:pointer}
-.responsive-menu .menu-header li .visible{display:block}@media(max-width:40em){.responsive-menu,.responsive-menu .menu-header,.responsive-menu .menu-header .menu{width:100%}
-.responsive-menu .menu-header li{text-align:center}}
+.responsive-menu .menu-header li .visible{display:block}
+
+
+@media(max-width:40em){
+.responsive-menu,.responsive-menu .menu-header,.responsive-menu .menu-header .menu{width:100%}
+.responsive-menu .menu-header li{text-align:center}
+.diapos { height: 50rem;}
+
+}
 
 
