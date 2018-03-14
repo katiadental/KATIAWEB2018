@@ -213,9 +213,10 @@ padding:0; color:#989da1;}
 .expand{display:block!important}
 /*SUBMENU STYLE*/
 .responsive-menu .menu-header li .sub-menu{display:none;
-font-size:13px;}
+font-size:13px; background-color:red;}
 .responsive-menu .menu-header li .sub-menu li{border-bottom:0;
-line-height:2.5rem;}
+line-height:2.5rem; background-color:#d4f2ff;}
+.responsive-menu .menu-header li .sub-menu li:hover {background-color:#9be0ff;}
 /*+ - STYLE*/
 .open-menu-link{display:none;
 position:absolute;
