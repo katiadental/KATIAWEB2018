@@ -281,6 +281,12 @@ max-width: 25%;
 
 
 @media(max-width:40em){
+.responsive-menu {
+    font-size: 24px;
+}
+.responsive-menu .menu-header li .sub-menu {
+    font-size: 20px;
+}
 .responsive-menu,.responsive-menu .menu-header,.responsive-menu .menu-header .menu{width:100%}
 .responsive-menu .menu-header li{text-align:center}
 .diapos { height: 50rem;}
