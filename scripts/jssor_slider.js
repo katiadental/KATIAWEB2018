@@ -66,7 +66,7 @@ jssor_4_slider_init = function() {
                     jssor_4_slider.$ScaleSize(expectedWidth, expectedHeight, MAX_BLEEDING);
 
                     //position slider at center in vertical orientation
-                    jssor_4_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
+                    jssor_4_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 0) + "px";
 
                     //position slider at center in horizontal orientation
                     jssor_4_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
