@@ -1,0 +1,1 @@
+function submitsearchForm(){document.searchform['SearchText'].value = document.getElementById('searchformtext').value;document.searchform.submit();}// JavaScript Document
