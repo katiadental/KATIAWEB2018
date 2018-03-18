@@ -150,7 +150,7 @@ jssor_4_slider_init = function() {
               }
             };
 
-            var jssor_4_slider = new $JssorSlider$("jssor_1", jssor_4_options);
+            var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_4_options);
 
             //make sure to clear margin of the slider container element
             jssor_4_slider.$Elmt.style.margin = "";
