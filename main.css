@@ -114,6 +114,8 @@ color:#fff}
 .jssor_2 {top:25px;height:300px;}
 .jssorb031 {bottom:10px;}
 
+#jssor_4 {display: none;
+}	
 /*SLIDERS*/
         /*jssor slider loading skin double-tail-spin css*/
         .jssorl-004-double-tail-spin img {
@@ -158,8 +160,7 @@ color:#fff}
 
 
 
-       
-		
+	
 		
 .IMAGECOL{/*-ms-flex-preferred-size:100%;
 flex-basis:100%;
@@ -352,8 +353,11 @@ max-width: 33%;
 }
 }
 
-@media(max-width:1500px){
-	#jssor_0 {display: none;
+@media(min-width:1500px){
+	#jssor_4 {display: block; 
 }
-	#jssor_1 {display: block;
+	#jssor_1 {display: none;
 }
+.titulos {margin: 6rem 0 3rem 6rem; }
+.titulos2 {
+margin: 0rem 0 3rem 6rem; }
