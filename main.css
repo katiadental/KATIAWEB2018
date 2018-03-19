@@ -37,6 +37,82 @@ display:table}
 
 #wrap {min-height:100%;height:auto;margin:0;padding:0;overflow:hidden}
 
+.cabecera {display:flex; flex-direction: row; flex-wrap: wrap; align-content: space-between; justify-content: center; padding: 5rem 0rem 0rem 0rem ; flex-grow: 1; flex-basis: 10%;}
+
+.itemscabecera {width: 20%; margin:1rem; 
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none; text-align:center; font-size:30px;
+  float:left;
+  }
+  
+.itemscabecera.cli {
+background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9')";
+}
+.itemscabecera.lab {
+background: #5669ce;
+  background-image: -webkit-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -moz-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -ms-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -o-linear-gradient(top, #5669ce, #3848a1);
+  background-image: linear-gradient(to bottom, #5669ce, #3848a1);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1')";
+}
+.itemscabecera.cat {
+background: #46b76b;
+  background-image: -webkit-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -moz-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -ms-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -o-linear-gradient(top, #61a778, #2f7f49);
+  background-image: linear-gradient(to bottom, #61a778, #2f7f49);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49')";
+}
+
+
+.itemscabecera.icon.cli span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/09/ICO_CLINI.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.labo span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/05/ICO_LABO.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.cata span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/22/ICO_CATA.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+
+.itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
+
+
 /*TEXTOS*/
 .titulos {color: #96D7F5;
 position: relative;
@@ -44,10 +120,10 @@ font-family:'Open Sans', helvetica, arial, sans-serif;
 font-size:50px;
 font-weight:800;
 font-style:normal;
-margin: 4rem 0 3rem 6rem; }
+margin: 2rem 0 2rem 2rem; }
 .titulos2 {
-margin: 2rem 0 3rem 6rem; }
-
+margin: 2rem 0 2rem 2rem; }
+.titulos3 {text-align:center; font-size:30px; color: #fff; margin: 0!important; font-weight:400;}
 .header{position:fixed;
 top:0;
 background-color:#fff;
@@ -324,6 +400,9 @@ max-width: 20%;
 flex: 25%;
 max-width: 25%;
 }
+.titulos3 {font-size:24px}
+.itemscabecera {margin: 0.25rem;}
+.cabecera {padding: 1rem 0rem 0rem 0rem ;}
 }
 
 
@@ -340,7 +419,7 @@ max-width: 25%;
 .panoslides {top:25px}
 .titulos {
 font-size:20px;
-margin: 4.5rem 0 0.5556rem 1rem; }
+margin: 0.5rem 0 0.5556rem 1rem; }
 .titulos2 {margin: 0.5rem 0 0.5556rem 1rem;}
 /*.jssor_2 {top: 0;
 height: 170px;}*/
@@ -351,6 +430,10 @@ height: 170px;}*/
 flex: 33%;
 max-width: 33%;
 }
+.itemscabecera {margin: 0.25rem; width: 25%;}
+.cabecera {padding: 4rem 0rem 0rem 0rem ;}
+.titulos3 {font-size: 16px;}
+.itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
 }
 
 @media(min-width:1500px){
@@ -358,6 +441,5 @@ max-width: 33%;
 }
 	#jssor_1 {display: none;
 }
-.titulos {margin: 6rem 0 3rem 6rem; }
-.titulos2 {
-margin: 0rem 0 3rem 6rem; }
+.cabecera {padding: 6rem 8rem 0rem 8rem ;}
+}
