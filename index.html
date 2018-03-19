@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>MENU KATIA 2018</title>
+<title>KATIA OXATIS</title>
 <meta charset="UTF-8">
 <meta name="theme-color" content="#747691" />
 <meta https-equiv="X-UA-Compatible" content="IE=9" />
@@ -22,12 +22,17 @@
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/ik-js.js"></script>
 <!--MENU DESPLEGABLE HAMBURGER-->
 <!--JSSOR SLIDER-->
-<script src="scripts/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
 <!--JSSOR SLIDER-->
-<script src="scripts/jssor_slider.js"></script>
+<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jssor_slider.js"></script>
+<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/busqueda.js"></script>
 
 <style>
 body.PB {text-align:left;}
+.header-login svg, .header-login{
+/*width:40px;*/
+height:50px}
+#blocksearch .blockbtn {background-color:#9FA3A7}
 </style>
 
 </head>
@@ -48,6 +53,15 @@ body.PB {text-align:left;}
 <div class="logo">
 <a href="http://www.katiadental.com/" title="Katiadental" rel="home"><img src="http://www.katiadental.com/Files/113993/Img/18/KATIA-LOGO-flat.png" alt="Logo Katia" width="180px"></a>
 </div>
+<!--BUSQUEDA-->
+<div class="blockshortcut" id="blocksearch" style="top: 0.5rem; position: absolute; left: 15rem;">
+<div class="blockarea" ><input type="text" id="searchformtext" name="searchformtext" class="searchtext" value="" size="18" onkeyup="if ((event.keyCode?event.keyCode:event.charCode)==13) submitsearchForm();" autocomplete="off">
+<span class="searchimg"></span><input type="button" class="blockbtn" id="searchformBtn" name="searchformBtn" value="Buscar" onclick="submitsearchForm();">
+</div>
+</div>
+<!--FIN BUSQUEDA-->
+
+
 <!--HAMBURGER-->
 <div class="mobile-nav">
 <!--HAMBURGER ICON-->
@@ -87,59 +101,70 @@ body.PB {text-align:left;}
 
 <!--TOPSLIDER-->
 <section>
-<!-- #region Jssor Slider Begin -->
-<!-- Generator: Jssor Slider Maker -->
-<!-- Source: https://www.jssor.com
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
 
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+ <div style="position:relative;top:70px;left:0;width:100%;height:100%;overflow:hidden; ">
+        <div id="jssor_4" style="position:relative;margin:0 auto;top:0px;left:0px;width:2800px;height:310px;overflow:hidden;visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+            </div>
+            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:2800px;height:310px;overflow:hidden;">
+                <div style="background-color:#18469e;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001Long.jpg" />
+            </div>
+            <div style="background-color:#E6C236;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/21/002Long.jpg" />
+            </div>
+            <div style="background-color:#83BD8D;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/14/003Long.jpg" />
+            </div>
+            <div style="background-color:#CC5C5B;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/004Long.jpg" />
+            </div>
+            <div style="background-color:#5996D5;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/005Long.jpg" />
+            </div>
+            <div style="background-color:#000000;" data-p="388.75">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/15/006Long.jpg" />
+            </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:10px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+            <!-- Arrow Navigator -->
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:125px;left:25px;" data-scale="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:125px;right:25px;" data-scale="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+        </div>
 
-            /*#region responsive code begin*/
+    </div>
 
-            var MAX_WIDTH = 3000;
+    <script type="text/javascript">jssor_4_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
 
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
+</section>
+<section>
 
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script> -->
-
-    <div class="diapos" id="jssor_1" style="">
+    <div class="diapos" id="jssor_1">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" />
         </div>
         <div class="panoslides" data-u="slides">
-            <div data-p="201.25"><a href="https://leone.it/espanol/ortodoncia/novedades/aqua_sl.php"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001TOP.jpg" /></a></div>
+            <div data-p="201.25" ><a href="https://leone.it/espanol/ortodoncia/novedades/aqua_sl.php"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001TOP.jpg" /></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766355"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/09/002.jpg" alt="Alginatos"></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/fisiodispensador-con-luz-c2x16559954"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/18/004.jpg" /></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/alambre-trenzado-plano-para-splinting-c2x16560738"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/19/006TOP.jpg" /></a></div>
@@ -175,65 +200,12 @@ body.PB {text-align:left;}
 <div class="titulos">Novedades
 </div>
 
-<!--PROMOCAROUSEL-->
-  <!-- #region Jssor Slider Begin -->
-    <!-- Generator: Jssor Slider Maker -->
-    <!-- Source: https://www.jssor.com
-    <script type="text/javascript">
-        jssor_2_slider_init = function() {
+<!--NOVCAROUSEL-->
 
-            var jssor_2_options = {
-              $AutoPlay: 0,
-              $AutoPlaySteps: 5,
-              $SlideDuration: 250,
-              $FillMode: 4,
-              $PauseOnHover: 3,
-              $SlideWidth: 225,
-              $SlideHeight: 225,
-              $SlideSpacing: 30,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $Steps: 5
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$,
-                $SpacingY: 30
-              }
-            };
-
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1600;
-
-            function ScaleSlider() {
-                var containerElement = jssor_2_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_2_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>-->
     <div id="jssor_2" style="position:relative;margin:0 auto; left:0px;width:1300px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:275px;overflow:hidden;">
                 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/cadenitas-elasticas-c2x25561646"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/25/001.jpg" alt="Cadenitas" title="Cadenitas elásticas"></a></div>
@@ -302,65 +274,10 @@ body.PB {text-align:left;}
 </div>
 
 <!--PROMOCAROUSEL-->
-  <!-- #region Jssor Slider Begin -->
-    <!-- Generator: Jssor Slider Maker -->
-    <!-- Source: https://www.jssor.com
-    <script type="text/javascript">
-        jssor_3_slider_init = function() {
-
-            var jssor_3_options = {
-              $AutoPlay: 0,
-              $AutoPlaySteps: 5,
-              $SlideDuration: 250,
-              $FillMode: 4,
-              $PauseOnHover: 3,
-              $SlideWidth: 225,
-              $SlideHeight: 225,
-              $SlideSpacing: 30,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $Steps: 5
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$,
-                $SpacingY: 30
-              }
-            };
-
-            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1600;
-
-            function ScaleSlider() {
-                var containerElement = jssor_3_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_3_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>-->
-
     <div id="jssor_3" style="position:relative;margin:0 auto; left:0px;width:1300px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:275px;overflow:hidden;">
 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736700"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/02/PROMO09.jpg" alt="NovedadesEdenta" title="Acabado circonio" /></a></div>
@@ -479,7 +396,12 @@ body.PB {text-align:left;}
 </section>
 
 <footer>
-<div style="background:#696868; height:10rem;"> </div>
+<div style="background:#b7b7b7; height:10rem;">
+<div id="footermenu"><ul id="fmenu"><li class="begin">&nbsp;</li><li class="mitext"><a class="menu" href="PBCPPlayer.asp?ID=1598192">Gastos de envío</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598191">Medios de pago</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598194">Condiciones Generales de Venta</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598195">Aviso Legal</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598197">Contacto</a></li><li class="miimg"><a class="menu" target="_blank" href="https://www.facebook.com/katiaproductosdentales?fref=ts"><img src="Files/113993/facebook.png"/></a></li><li class="miimg"><a class="menu" target="_blank" href="https://twitter.com/KatiaDental"><img src="Files/113993/twitter.png"/></a></li><li class="miimg"><img src="Files/113993/payment.png"/></li><li class="end">&nbsp;</li></ul></div><div id="copyright"><span>Copyright © 2014 - Informaciones legales de tu empresa</span></div><div id="poweredby"><a href="https://www.xopie.com" rel="nofollow" target="_blank"><span>Crear tienda online con Xopie</span></a></div></div>
+
+	</div>
+
+</div></div>
 </footer>
 <!--HAMBURGER SCRIPT-->
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/hamburgermenu.js"></script>
