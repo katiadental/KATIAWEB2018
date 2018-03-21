@@ -112,7 +112,8 @@ background-position:bottom right;
 
 .itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
 
-#blocksearch {top: 0.5rem; position: absolute; left: 15rem;}
+#blocksearch {top: 0.5rem; position: absolute; left: 13.5rem;}
+#blocksearch2 {display:none;}
 /*TEXTOS*/
 .titulos {color: #96D7F5;
 position: relative;
@@ -447,7 +448,8 @@ border-radius: 0.25rem;}
 #vermas {width:11.25rem; }
 
 }
-
+@media(max-width:32rem){#blocksearch {display:none;}
+#blocksearch2 {display:block; left:50%; margin-left:30%; margin-top:1rem;}}
 
 @media(min-width:1500px){
 	#jssor_4 {display: block; 

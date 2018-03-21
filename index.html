@@ -29,6 +29,7 @@
 
 <style>
 body.PB {text-align:left;}
+body.PB a, body.PB a:link {color:#989da1}
 .header-login svg, .header-login{
 /*width:40px;*/
 height:50px}
@@ -201,7 +202,13 @@ height:50px}
 <div class="itemscabecera lab icon labo"><a href="http://www.katiadental.com/laboratorio-c102x2625760"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Laboratorio dental</span></a></div>
 <div class="itemscabecera cat icon cata"><a href="https://view.publitas.com/katia-dental/catalogo-katia-2018"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Catálogo online</span></a></div>
 </section>
-
+<!--BUSQUEDA-->
+<div class="blockshortcut" id="blocksearch2" style="">
+<div class="blockarea" ><input type="text" id="searchformtext" name="searchformtext" class="searchtext" value="" size="18" onkeyup="if ((event.keyCode?event.keyCode:event.charCode)==13) submitsearchForm();" autocomplete="off">
+<span class="searchimg"></span><input type="button" class="blockbtn" id="searchformBtn" name="searchformBtn" value="Buscar" onclick="submitsearchForm();">
+</div>
+</div>
+<!--FIN BUSQUEDA-->
 <section>
 <div class="titulos">Novedades
 </div>
