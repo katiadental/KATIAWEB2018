@@ -39,14 +39,16 @@ display:table}
 
 .cabecera {display:flex; flex-direction: row; flex-wrap: wrap; align-content: space-between; justify-content: center; padding: 5rem 0rem 0rem 0rem ; flex-grow: 1; flex-basis: 10%;}
 
-.itemscabecera {width: 20%; margin:1rem; 
+.itemscabecera {width: 20%;
+margin:1rem; 
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
   border-radius: 6px;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 10px 10px 10px;
-  text-decoration: none; text-align:center; font-size:30px;
+  text-decoration: none; text-align:center;
+  font-size:30px;
   float:left;
   }
   
@@ -112,8 +114,8 @@ background-position:bottom right;
 
 .itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
 
-#blocksearch {top: 0.5rem; position: absolute; left: 13.5rem;}
-#blocksearch2 {display:none;}
+.blockshortcut {top: 0.5rem; position: absolute; left: 13.5rem;}
+.blockshortcut2 {display:none;}
 /*TEXTOS*/
 .titulos {color: #96D7F5;
 position: relative;
@@ -440,7 +442,7 @@ max-width: 31%; margin: 0.15rem;
 .IMAGECOL {border: 0.12rem solid #B8B8B8;
 border-radius: 0.25rem;}
 
-.itemscabecera {margin: 0.1rem; width: 25%;}
+.itemscabecera {margin: 0.1rem; width: 26%; padding: 6px; }
 .cabecera {padding: 4rem 0rem 0rem 0rem ;}
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
@@ -448,8 +450,8 @@ border-radius: 0.25rem;}
 #vermas {width:11.25rem; }
 
 }
-@media(max-width:32rem){#blocksearch {display:none;}
-#blocksearch2 {display:block; left:50%; margin-left:30%; margin-top:1rem;}}
+@media(max-width:32rem){.blockshortcut {display:none;}
+.blockshortcut2 {display:block; left:50%; margin-left:30%; margin-top:1rem;}}
 
 @media(min-width:1500px){
 	#jssor_4 {display: block; 
