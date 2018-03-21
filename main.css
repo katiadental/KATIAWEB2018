@@ -112,7 +112,7 @@ background-position:bottom right;
 
 .itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
 
-
+#blocksearch {top: 0.5rem; position: absolute; left: 15rem;}
 /*TEXTOS*/
 .titulos {color: #96D7F5;
 position: relative;
@@ -263,7 +263,7 @@ max-height: 100%;
 justify-content: space-between;
 box-sizing:border-box;
 flex: 10%;
-max-width: 10%;
+max-width: 12%;
 }
 
 .columnas {
@@ -388,8 +388,8 @@ cursor:pointer}
 
 @media(max-width:90em){
 .FRAME {
-flex: 20%;
-max-width: 20%;
+flex: 10%;
+max-width: 12%;
 }
 }
 
@@ -397,8 +397,8 @@ max-width: 20%;
 @media(max-width:56em){
 /*.diapos { height: 50rem;}*/
 .FRAME {
-flex: 25%;
-max-width: 25%;
+flex: 18%;
+max-width: 25%; margin: 0.5rem;
 }
 .titulos3 {font-size:24px}
 .itemscabecera {margin: 4rem 1rem 1rem 0;}
@@ -425,22 +425,29 @@ background-size: 34px auto;
 .panoslides {top:25px}
 .titulos {
 font-size:20px;
-margin: 0.5rem 0 0.5556rem 1rem; }
-.titulos2 {margin: 0.5rem 0 0.5556rem 1rem;}
+margin: 0.85rem 0 0.5556rem 1rem; }
+.titulos2 {margin: 0.85rem 0 0.5556rem 1rem;}
 /*.jssor_2 {top: 0;
 height: 170px;}*/
 .jssorb031 {bottom:0px;}
-.jssora052 {width:140px;height:auto;}
+.jssora052 {width:140px;height:auto; right: 5.2rem;}
 
 .FRAME {
-flex: 33%;
-max-width: 33%;
+flex: 31%;
+max-width: 31%; margin: 0.15rem;
 }
+.IMAGECOL {border: 0.12rem solid #B8B8B8;
+border-radius: 0.25rem;}
+
 .itemscabecera {margin: 0.1rem; width: 25%;}
 .cabecera {padding: 4rem 0rem 0rem 0rem ;}
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
+#jssor_2, #jssor_3 {height: 18rem;}
+#vermas {width:11.25rem; }
+
 }
+
 
 @media(min-width:1500px){
 	#jssor_4 {display: block; 
