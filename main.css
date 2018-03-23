@@ -37,20 +37,28 @@ display:table}
 
 #wrap {min-height:100%;height:auto;margin:0;padding:0;overflow:hidden}
 
-.cabecera {display:flex; flex-direction: row; flex-wrap: wrap; align-content: space-between; justify-content: center; padding: 5rem 0rem 0rem 0rem ; flex-grow: 1; flex-basis: 10%;}
+.cabecera {display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: space-between;
+justify-content: center;
+padding: 5rem 0rem 0rem 0rem;
+flex-grow: 1; flex-basis: 10%;}
 
 .itemscabecera {width: 20%;
 margin:1rem; 
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 10px 10px 10px;
-  text-decoration: none; text-align:center;
-  font-size:30px;
-  float:left;
-  }
+-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px;
+color: #ffffff;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+text-align:center;
+float:left;
+/*
+font-size:30px;
+font-weight:100;*/
+}
   
 .itemscabecera.cli {
 background: #3498db;
@@ -115,18 +123,21 @@ background-position:bottom right;
 .itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
 
 .blockshortcut {top: 0.5rem; position: absolute; left: 13.5rem;}
-.blockshortcut2 {display:none;}
 /*TEXTOS*/
-.titulos {color: #96D7F5;
+.titulos {color: #1C9BD7;
 position: relative;
-font-family:'Open Sans', helvetica, arial, sans-serif;
+font-family:'Encode Sans', sans-serif;
 font-size:50px;
-font-weight:800;
-font-style:normal;
-margin: 2rem 0 2rem 2rem; }
+font-weight:100;
+margin: 2rem 0 1.5rem 2rem;
+}
 .titulos2 {
 margin: 2rem 0 2rem 2rem; }
-.titulos3 {text-align:center; font-size:30px; color: #fff; margin: 0!important; font-weight:400;}
+.titulos3 {/*text-align:center;*/
+font-size:30px;
+color: #fff;
+margin: 0!important;
+}
 .header{position:fixed;
 top:0;
 background-color:#fff;
@@ -136,9 +147,7 @@ height:70px;
 -webkit-box-shadow:0 2px 2px 0 #f5f5f5;
 -moz-box-shadow:0 2px 2px 0 #f5f5f5;
 box-shadow:0 2px 2px 0 #f5f5f5;*/
-font-family: 'Open Sans', helvetica, arial, sans-serif;
-font-weight:300;
-font-style:normal;
+font-family: 'Encode Sans', sans-serif;
 font-size:14px;
 z-index:1000; text-decoration:none;}
 
@@ -238,8 +247,75 @@ color:#fff}
         .jssora052.jssora052ds {opacity:.3;pointer-events:none;}
 
 
+ /*PRUEBA CONTENIDO HTML*/
 
-	
+.promo {display:flex;
+flex-direction: column;
+/*border: 1px solid #1C9BD7;
+margin:1rem;
+float:left;
+*/ 
+padding-top: 0.5rem; 
+flex-grow: 1;
+flex: 2 1 auto;
+flex-basis: 10%;
+max-width: 225px;
+min-height: 215px;
+color: #ffffff;
+text-decoration: none;
+text-align:center;
+}
+
+.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.2rem; flex-grow: 1;
+}
+ 
+
+.prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
+.euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
+
+.refe {margin-left:0; font-size: 14px; line-height: 0%;color: #848182; font-weight:300; margin-bottom: 10px;}
+
+#promo1 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo2 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo3 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo4 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo5 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo6 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo7 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo8 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/04/PHOTOPOLPRO-D.png);
+background-repeat:no-repeat; background-position:center; background-size: 90%}
+#promo9 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/21/PHOTOPOL-PRO-VACUUM-D.png);
+background-repeat:no-repeat; background-position:center; background-size: 95%}	
+#promo10 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/MAJOR_Ormalab85_5kg_D.png);
+background-repeat:no-repeat; background-position: center calc(0% + 35px); background-size: 62%}
+ /*FIN PRUEBA CONTENIDO HTML*/
 		
 .IMAGECOL{/*-ms-flex-preferred-size:100%;
 flex-basis:100%;
@@ -295,7 +371,7 @@ top:64%;
 line-height:1.2;
 */
 margin-top:-0.15em;
-font-size:12px;
+font-size:18px;
 font-weight:200;
 vertical-align:middle;
 z-index:99}
@@ -338,7 +414,8 @@ display:none;
 position:absolute;
 right:0;
 top:4.35rem;
-font-size:14px;
+font-size:18px;
+font-weight:100;
 border-bottom:#ededed solid 1px;
 border-left:#ededed solid 1px;
 -webkit-box-shadow:0 2px 2px 0 #f5f5f5;
@@ -373,7 +450,7 @@ padding:0; color:#989da1;}
 .expand{display:block!important}
 /*SUBMENU STYLE*/
 .responsive-menu .menu-header li .sub-menu{display:none;
-font-size:13px; background-color:red;}
+font-size:15px; background-color:red;}
 .responsive-menu .menu-header li .sub-menu li{border-bottom:0;
 line-height:2.5rem; background-color:#d4f2ff;}
 .responsive-menu .menu-header li .sub-menu li:hover {background-color:#9be0ff;}
@@ -448,10 +525,15 @@ border-radius: 0.25rem;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
 #jssor_2, #jssor_3 {height: 18rem;}
 #vermas {width:11.25rem; }
-
+.titulospromo {margin: -0.2rem 0.2rem;}
+.prix {margin: 1rem;
+height: 30px;
+line-height: 230%;
+font-size: 28px;}
+.euro {margin: 0rem;}
+.refe {font-size: 12px; margin: 0.5rem;}
 }
-@media(max-width:32rem){.blockshortcut {display:none;}
-.blockshortcut2 {display:block; left:50%; margin-left:30%; margin-top:1rem;}}
+@media(max-width:32rem){}
 
 @media(min-width:1500px){
 	#jssor_4 {display: block; 
