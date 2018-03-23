@@ -144,24 +144,25 @@ jssor_1_slider_init = function() {
               }
             };
 
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+             var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1600;
-
+           //#region responsive code begin
+            //the following code is to place slider in the center of parent container with no scale
             function ScaleSlider() {
+
                 var containerElement = jssor_2_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
+                    var expectedWidth = Math.min(containerWidth, jssor_2_slider.$OriginalWidth());
 
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                    //scale the slider to original height with no change
+                    jssor_2_slider.$ScaleSize(expectedWidth, jssor_2_slider.$OriginalHeight());
 
-                    jssor_2_slider.$ScaleWidth(expectedWidth);
+                    /*jssor_2_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 0) + "px";*/
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider, 120);
                 }
             }
 
@@ -170,7 +171,7 @@ jssor_1_slider_init = function() {
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
+            //#endregion responsive code end
         };
 jssor_3_slider_init = function() {
 
