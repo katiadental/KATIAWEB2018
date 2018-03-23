@@ -127,7 +127,7 @@ jssor_1_slider_init = function() {
 
             var jssor_2_options = {
               $AutoPlay: 0,
-              /*$AutoPlaySteps: 3,*/
+              /*$AutoPlaySteps: 5,*/
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
@@ -177,7 +177,7 @@ jssor_3_slider_init = function() {
 
             var jssor_3_options = {
               $AutoPlay: 0,
-              $AutoPlaySteps: 3,
+              /*$AutoPlaySteps: 5,*/
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
@@ -186,7 +186,7 @@ jssor_3_slider_init = function() {
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
-                $Steps: 5
+                $Steps: 3
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
