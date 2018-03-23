@@ -180,8 +180,8 @@ jssor_3_slider_init = function() {
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 225,
-              $SlideHeight: 225,
+              $SlideWidth: 300,
+              $SlideHeight: 300,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
