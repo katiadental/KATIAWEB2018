@@ -266,39 +266,39 @@ text-decoration: none;
 text-align:center;
 }
 
-.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.2rem; flex-grow: 1;
+.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.4rem; flex-grow: 1;
 }
- 
+.promomain {font-weight: 400;
+    font-size: 18px;} 
 
 .prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
-
 .refe {margin-left:0; font-size: 14px; line-height: 0%;color: #848182; font-weight:300; margin-bottom: 10px;}
 
 #promo1 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
+background-repeat:no-repeat; background-position:center calc(50% - 12px); background-size: 100%}
 #promo2 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
+background-repeat:no-repeat; background-position:center calc(50% - 5px); background-size: 110%}
 #promo3 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
+background-repeat:no-repeat; background-position:center; background-size: 90%}
 #promo4 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/17/ORTHOTECH-RETRACTOR-OYDT155.gif) ;
+background-repeat:no-repeat; background-position:center; background-size: 90%}
 #promo5 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/25/LEONE-FORWARDa-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 85%}
 #promo6 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
-border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
-background-repeat:no-repeat; background-position:center; background-size: 50%}
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/06/LEONE_TELESCOPIC_D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 90%}
 #promo7 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
@@ -315,6 +315,14 @@ background-repeat:no-repeat; background-position:center; background-size: 95%}
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/MAJOR_Ormalab85_5kg_D.png);
 background-repeat:no-repeat; background-position: center calc(0% + 35px); background-size: 62%}
+#promo11 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/02/INTENSIVE-TRAY-D.png);
+background-repeat:no-repeat; background-position: center; background-size: 90%}
+#promo12 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/07/Intensiv-OrthoStrips-KL070-D2.png);
+background-repeat:no-repeat; background-position: center calc(50% - 10px); background-size: 62%}
  /*FIN PRUEBA CONTENIDO HTML*/
 		
 .IMAGECOL{/*-ms-flex-preferred-size:100%;
