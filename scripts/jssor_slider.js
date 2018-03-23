@@ -176,7 +176,7 @@ jssor_3_slider_init = function() {
 
             var jssor_3_options = {
               $AutoPlay: 0,
-              $AutoPlaySteps: 5,
+              $AutoPlaySteps: 3,
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
@@ -211,7 +211,7 @@ jssor_3_slider_init = function() {
                     /*jssor_2_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 0) + "px";*/
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider, 120);
                 }
             }
 
