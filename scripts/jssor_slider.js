@@ -173,13 +173,14 @@ jssor_1_slider_init = function() {
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             //#endregion responsive code end
         };
+
 jssor_3_slider_init = function() {
 
             var jssor_3_options = {
               $AutoPlay: 0,
               /*$AutoPlaySteps: 5,*/
               $SlideDuration: 250,
-              $FillMode: 4,
+              $FillMode: 2,
               $PauseOnHover: 3,
               $SlideWidth: 250,
               $SlideHeight: 250,
@@ -190,9 +191,11 @@ jssor_3_slider_init = function() {
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
-                $SpacingY: 30
+                $SpacingY: 10
               }
             };
+
+           
 
             var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
 
