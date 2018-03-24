@@ -199,7 +199,8 @@ color:#fff}
 
 .diapos {height:22rem; position:relative; left:0px; width:1300px; overflow:hidden; margin:0 auto; top:65px; visibility:hidden; }
 .panoslides {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:310px;overflow:hidden;}
-.jssor_2 {top:25px;height:300px;}
+
+#jssor_2 {position:relative; margin:0 auto; left:0px; width:1370px; height:290px; overflow:hidden;visibility:hidden; top:-10px;}
 .jssorb031 {bottom:10px;}
 
 #jssor_4 {display: none;
@@ -259,8 +260,8 @@ padding-top: 0.5rem;
 flex-grow: 1;
 flex: 2 1 auto;
 flex-basis: 10%;
-max-width: 225px;
-min-height: 215px;
+max-width: 250px;
+min-height: 240px;
 color: #ffffff;
 text-decoration: none;
 text-align:center;
@@ -269,7 +270,7 @@ text-align:center;
 .titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.4rem; flex-grow: 1;
 }
 .promomain {font-weight: 400;
-    font-size: 18px;} 
+    font-size: 22px;} 
 
 .prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
@@ -286,7 +287,7 @@ background-repeat:no-repeat; background-position:center calc(50% - 5px); backgro
 #promo3 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
-background-repeat:no-repeat; background-position:center; background-size: 90%}
+background-repeat:no-repeat; background-position:center calc(50% + 5px); background-size: 90%}
 #promo4 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/17/ORTHOTECH-RETRACTOR-OYDT155.gif) ;
@@ -511,12 +512,7 @@ background-size: 34px auto;
 .responsive-menu .menu-header li{text-align:center}
 .diapos { height: 26rem;}
 .panoslides {top:25px}
-.titulos {
-font-size:20px;
-margin: 0.85rem 0 0.5556rem 1rem; }
-.titulos2 {margin: 0.85rem 0 0.5556rem 1rem;}
-/*.jssor_2 {top: 0;
-height: 170px;}*/
+
 .jssorb031 {bottom:0px;}
 .jssora052 {width:140px;height:auto; right: 5.2rem;}
 
@@ -529,11 +525,17 @@ border-radius: 0.25rem;}
 
 .itemscabecera {margin: 0.1rem; width: 26%; padding: 6px; }
 .cabecera {padding: 4rem 0rem 0rem 0rem ;}
+.titulos {
+font-size:30px;
+margin: 0.85rem 0 1.5rem 1rem; font-weight: 500; }
+.titulos2 {margin: 0.85rem 0 0.5556rem 1rem;}
+/*.jssor_2 {top: 0;
+height: 170px;}*/
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
 #jssor_2, #jssor_3 {height: 18rem;}
 #vermas {width:11.25rem; }
-.titulospromo {margin: -0.2rem 0.2rem;}
+.titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
 .prix {margin: 1rem;
 height: 30px;
 line-height: 230%;
