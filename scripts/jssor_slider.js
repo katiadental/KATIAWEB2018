@@ -181,12 +181,12 @@ jssor_3_slider_init = function() {
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 300,
-              $SlideHeight: 300,
+              $SlideWidth: 250,
+              $SlideHeight: 250,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
-                $Steps: 4
+                $Steps: 3
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
