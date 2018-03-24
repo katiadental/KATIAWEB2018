@@ -123,13 +123,14 @@ jssor_1_slider_init = function() {
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
-  jssor_2_slider_init = function() {
+
+jssor_2_slider_init = function() {
 
             var jssor_2_options = {
               $AutoPlay: 0,
               /*$AutoPlaySteps: 5,*/
               $SlideDuration: 250,
-              $FillMode: 4,
+              $FillMode: 2,
               $PauseOnHover: 3,
               $SlideWidth: 250,
               $SlideHeight: 250,
@@ -140,11 +141,13 @@ jssor_1_slider_init = function() {
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
-                $SpacingY: 30
+                $SpacingY: 10
               }
             };
 
-             var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+           
+
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
            //#region responsive code begin
             //the following code is to place slider in the center of parent container with no scale
