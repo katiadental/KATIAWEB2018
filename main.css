@@ -200,7 +200,8 @@ color:#fff}
 .diapos {height:22rem; position:relative; left:0px; width:1300px; overflow:hidden; margin:0 auto; top:65px; visibility:hidden; }
 .panoslides {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:310px;overflow:hidden;}
 
-#jssor_2 {position:relative; margin:0 auto; left:0px; width:1370px; height:290px; overflow:hidden;visibility:hidden; top:-10px;}
+#jssor_2, #jssor_3 {position:relative; margin:0 auto; left:0px; width:1370px; height:290px; overflow:hidden; visibility:hidden; top:-10px;}
+
 .jssorb031 {bottom:10px;}
 
 #jssor_4 {display: none;
@@ -275,6 +276,8 @@ text-align:center;
 .prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
 .refe {margin-left:0; font-size: 14px; line-height: 0%;color: #848182; font-weight:300; margin-bottom: 10px;}
+.vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem;}
+.ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
 
 #promo1 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
@@ -480,6 +483,8 @@ cursor:pointer}
 flex: 10%;
 max-width: 12%;
 }
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 24px; margin-top:0rem;}
 }
 
 
@@ -497,6 +502,9 @@ max-width: 25%; margin: 0.5rem;
 padding-right: 40px;
 background-size: 34px auto;
 }
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 40px; margin-top:1rem;}
+.ion-arrow-right-c {font-size:42px; position: relative; top: 5px;}
 
 }
 
@@ -514,7 +522,7 @@ background-size: 34px auto;
 .panoslides {top:25px}
 
 .jssorb031 {bottom:0px;}
-.jssora052 {width:140px;height:auto; right: 5.2rem;}
+/*.jssora052 {height:40px;}*/
 
 .FRAME {
 flex: 31%;
@@ -533,8 +541,7 @@ margin: 0.85rem 0 1.5rem 1rem; font-weight: 500; }
 height: 170px;}*/
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
-#jssor_2, #jssor_3 {height: 18rem;}
-#vermas {width:11.25rem; }
+#jssor_2, #jssor_3 {height: 17rem;}
 .titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
 .prix {margin: 1rem;
 height: 30px;
@@ -542,6 +549,8 @@ line-height: 230%;
 font-size: 28px;}
 .euro {margin: 0rem;}
 .refe {font-size: 12px; margin: 0.5rem;}
+.vermas {font-size: 40px;}
+
 }
 @media(max-width:32rem){}
 
