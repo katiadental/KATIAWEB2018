@@ -179,18 +179,11 @@ line-height: 3rem;
 padding:0 20px; }*/
 
 .header-login{position:absolute;
-right:1rem; display:inline-block;
-/*border-left:solid #f5f5f5 1px*/}
+right:1.35rem; top: 0.65rem; font-size:36px;
+}
 
-.header-login:hover svg, .header-login a:hover svg path, .header-login a:hover, .header-login svg:hover{fill:#0394D6}
+.header-login a:hover {color:#0394D6}
 
-.header-login svg, .header-login{
-/*width:40px;*/
-height:50px}
-
-.header-login svg{
-fill:#989da1;
-padding-top:13px}
 
 .btn{background:green;
 color:#fff}
@@ -235,9 +228,9 @@ color:#fff}
 
         /*jssor slider arrow skin 051 css*/
         .jssora051 {display:block;position:absolute;cursor:pointer;}
-        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-        .jssora051:hover {opacity:.8;}
-        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051 .a {fill:none;stroke:#989da1;stroke-width:1500;stroke-miterlimit:0;}
+        .jssora051:hover {opacity:.4;}
+        .jssora051.jssora051dn {opacity:.5; }
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 /*jssor slider CAROUSEL loading skin double-tail-spin css*/
 
@@ -371,8 +364,8 @@ flex-flow: row wrap;
 /*HAMBURGER*/
 .menu-btn{position:absolute;
 display:inline-block;
-right:5rem;
-top:1.4rem;
+right:4rem;
+top:1.65rem;
 cursor:pointer}
 
 .menu-btn div{
@@ -389,13 +382,15 @@ vertical-align:middle;
 z-index:99}
 
 /*HAMBURGER STYLE*/
-.hamburger:hover{opacity:.6; }
 .hamburger-box{position:relative; display:inline-block; width:40px;height:24px}
 .hamburger-inner{top:50%; display:block; margin-top:-2px}
 .hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{position:absolute; width:30px; height:3px;transition-timing-function:ease;transition-duration:.15s;transition-property:transform;border-radius:4px;background-color:#989da1}
 .hamburger-inner:after,.hamburger-inner:before{display:block;content:""}
 .hamburger-inner:before{top:-10px}
 .hamburger-inner:after{bottom:-10px}
+.hamburger-box:hover .hamburger-inner, .hamburger-box:hover .hamburger-inner::before, .hamburger-box:hover .hamburger-inner::after {background:#0394D6;}
+
+
 .hamburger--spin .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
 .hamburger--spin .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
 .hamburger--spin .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
