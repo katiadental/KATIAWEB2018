@@ -180,7 +180,7 @@ line-height: 3rem;
 padding:0 20px; }*/
 
 .header-login{position:absolute;
-right:1.35rem; top: 0.65rem; font-size:36px;
+right:1.35rem; top: 1rem; font-size:36px;
 }
 
 .header-login a:hover {color:#0394D6}
@@ -267,7 +267,7 @@ text-align:center;
 .promomain {font-weight: 400;
     font-size: 22px;} 
 
-.prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
+.prix {margin-left:0; font-size: 26px; line-height: 540%; color: red; font-weight:500; height: 0px;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
 .refe {margin-left:0; font-size: 14px; line-height: 0%;color: #848182; font-weight:300; margin-bottom: 10px;}
 .vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
