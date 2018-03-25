@@ -188,6 +188,8 @@ right:1.35rem; top: 1rem; font-size:36px;
 #headerInfoCart {
     top: 1.5rem; right: 8rem; background-image: url(https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/ICO_SHOPPING.svg) no-repeat 0px;
 }
+
+#blocksearch .blockbtn {background-image: url(https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/ICO_SHOPPING.svg) no-repeat 0px;}
 .btn{background:green;
 color:#fff}
 
