@@ -1,0 +1,564 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;
+padding:0; text-decoration: none;}
+table{border-collapse:collapse;
+border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;
+font-weight:400}
+ol,ul,li{list-style:none; text-decoration:none;}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;
+font-weight:400}
+q:before,q:after{content:''}
+strong{font-weight:700}em{font-style:italic}
+a img{border:0}
+.aligncenter{display:block;
+margin:0 auto}
+.alignleft{float:left}
+.alignright{float:right}
+.wp-caption{border:1px solid #666;
+text-align:center;
+background:#ccc;
+padding:10px;
+margin:10px}
+.clear{clear:both;
+zoom:1}
+.container{position:relative;
+max-width:1e3px;
+margin:auto;
+padding:0 20px}
+.table{width:100%;
+height:100%;
+display:table}
+
+
+#wrap {min-height:100%;height:auto;margin:0;padding:0;overflow:hidden}
+
+.cabecera {display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: space-between;
+justify-content: center;
+padding: 5rem 0rem 0rem 0rem;
+flex-grow: 1; flex-basis: 10%;}
+
+.itemscabecera {width: 20%;
+margin:1rem; 
+-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px;
+color: #ffffff;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+text-align:center;
+float:left;
+/*
+font-size:30px;
+font-weight:100;*/
+}
+  
+.itemscabecera.cli {
+background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9')";
+}
+.itemscabecera.lab {
+background: #5669ce;
+  background-image: -webkit-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -moz-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -ms-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -o-linear-gradient(top, #5669ce, #3848a1);
+  background-image: linear-gradient(to bottom, #5669ce, #3848a1);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1')";
+}
+.itemscabecera.cat {
+background: #46b76b;
+  background-image: -webkit-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -moz-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -ms-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -o-linear-gradient(top, #61a778, #2f7f49);
+  background-image: linear-gradient(to bottom, #61a778, #2f7f49);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49')";
+}
+
+
+.itemscabecera.icon.cli span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/09/ICO_CLINI.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.labo span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/05/ICO_LABO.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.cata span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/22/ICO_CATA.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+
+.itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
+
+.blockshortcut {top: 0.5rem; position: absolute; left: 13.5rem;}
+
+/*TEXTOS*/
+.titulos {color: #848182;
+position: relative;
+font-family:'Encode Sans', sans-serif;
+font-size:50px;
+font-weight:100;
+margin: 2rem 0 4rem 0rem;
+}
+.titulos2 {
+margin: 2rem 0 2rem 2rem; }
+.titulos3 {/*text-align:center;*/
+font-size:30px;
+color: #fff;
+margin: 0!important;
+}
+.header{position:fixed;
+top:0;
+background-color:#fff;
+width:100%;
+height:70px;
+/*border-bottom:#ededed solid 1px;
+-webkit-box-shadow:0 2px 2px 0 #f5f5f5;
+-moz-box-shadow:0 2px 2px 0 #f5f5f5;
+box-shadow:0 2px 2px 0 #f5f5f5;*/
+font-family: 'Encode Sans', sans-serif;
+font-size:14px;
+z-index:1000; text-decoration:none;}
+
+.logo {
+height:auto;
+display:block;
+padding:0;
+z-index:10000;
+margin:0.25rem 0 0 0.8rem;
+}
+.header a {color: #989da1}
+.header a:hover {color: #ffffff}
+/*.header .menu, .menu-header{
+display:inline-block;
+}
+/*MENUPOPUP STYLE
+.header .menu a{color:#989da1;
+text-decoration:none;
+text-transform:uppercase;
+}
+/*MENU TEXT STYLE
+.header .menu a:hover{color:#ffffff;}
+
+.header .menu .current_page_item a,.header .menu .current-page-ancestor a{color:#3d454c}
+
+.header .menu li{display:block;
+float:left;
+line-height: 3rem;
+padding:0 20px; }*/
+
+.header-login{position:absolute;
+right:1.35rem; top: 0.65rem; font-size:36px;
+}
+
+.header-login a:hover {color:#0394D6}
+
+
+.btn{background:green;
+color:#fff}
+
+.mobile-nav {display:block; z-index:1000;}
+
+.diapos {height:22rem; position:relative; left:0px; width:1300px; overflow:hidden; margin:0 auto; top:65px; visibility:hidden; }
+.panoslides {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:310px;overflow:hidden;}
+
+#jssor_2, #jssor_3 {position:relative; margin:0 auto; left:0px; width:1370px; height:290px; overflow:hidden; visibility:hidden; top:-10px;}
+
+.jssorb031 {bottom:10px;}
+
+#jssor_4 {display: none;
+}	
+/*SLIDERS*/
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#B7B7B7; stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#989da1;stroke-width:1500;stroke-miterlimit:0;}
+        .jssora051:hover {opacity:.4;}
+        .jssora051.jssora051dn {opacity:.5; }
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+/*jssor slider CAROUSEL loading skin double-tail-spin css*/
+
+ /*jssor slider arrow skin 052 css*/
+        .jssora052 {display:block;position:absolute;cursor:pointer; width:120px;height:55px;top:248px;right:25px;}
+        .jssora052 .a {fill:none;stroke:#000;stroke-width:360;stroke-miterlimit:10;}
+        .jssora052:hover {opacity:.8;}
+        .jssora052.jssora052dn {opacity:.5;}
+        .jssora052.jssora052ds {opacity:.3;pointer-events:none;}
+
+
+ /*PRUEBA CONTENIDO HTML*/
+
+.promo {display:flex;
+flex-direction: column;
+/*border: 1px solid #1C9BD7;
+margin:1rem;
+float:left;
+*/ 
+padding-top: 0.5rem; 
+flex-grow: 1;
+flex: 2 1 auto;
+flex-basis: 10%;
+max-width: 250px;
+min-height: 250px;
+color: #ffffff;
+text-decoration: none;
+text-align:center;
+}
+
+.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.4rem; flex-grow: 1;
+}
+.promomain {font-weight: 400;
+    font-size: 22px;} 
+
+.prix {margin-left:0; font-size: 26px; line-height: 240%; color: red; font-weight:500; height: 0px;}
+.euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
+.refe {margin-left:0; font-size: 14px; line-height: 0%;color: #848182; font-weight:300; margin-bottom: 10px;}
+.vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
+.ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
+
+#promo1 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
+background-repeat:no-repeat; background-position:center calc(50% - 12px); background-size: 100%}
+#promo2 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
+background-repeat:no-repeat; background-position:center calc(50% - 5px); background-size: 110%}
+#promo3 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
+background-repeat:no-repeat; background-position:center calc(50% + 5px); background-size: 90%}
+#promo4 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/17/ORTHOTECH-RETRACTOR-OYDT155.gif) ;
+background-repeat:no-repeat; background-position:center; background-size: 90%}
+#promo5 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/25/LEONE-FORWARDa-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 85%}
+#promo6 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/06/LEONE_TELESCOPIC_D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 90%}
+#promo7 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+background-repeat:no-repeat; background-position:center; background-size: 50%}
+#promo8 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/04/PHOTOPOLPRO-D.png);
+background-repeat:no-repeat; background-position:center; background-size: 90%}
+#promo9 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/21/PHOTOPOL-PRO-VACUUM-D.png);
+background-repeat:no-repeat; background-position:center; background-size: 95%}	
+#promo10 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/05/MAJOR_Ormalab85_5kg_D.png);
+background-repeat:no-repeat; background-position: center calc(0% + 35px); background-size: 62%}
+#promo11 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/02/INTENSIVE-TRAY-D.png);
+background-repeat:no-repeat; background-position: center; background-size: 90%}
+#promo12 {-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/07/Intensiv-OrthoStrips-KL070-D2.png);
+background-repeat:no-repeat; background-position: center calc(50% - 10px); background-size: 62%}
+ /*FIN PRUEBA CONTENIDO HTML*/
+		
+.IMAGECOL{/*-ms-flex-preferred-size:100%;
+flex-basis:100%;
+max-width:100%; float:left; left:0%;*/
+display: block;
+position: relative;
+padding: 4px;
+min-width:50%;
+}
+
+.IMAGECOL img {display:block; max-width:50%; margin:auto;/*max-height:100%;  margin-left:0%;*/ }
+
+.FRAME {/*box-shadow: 0.075rem 0 0 0 #C9C9C9,0 0.075rem 0 0 #C9C9C9,0.075rem 0.075rem 0 0 #C9C9C9,0.075rem 0 0 0 #C9C9C9 inset,0 0.075rem 0 0 #C9C9C9 inset;
+display: -webkit-flex;
+display: -ms-flexbox; 
+display: flex; 
+overflow: hidden;
+-ms-flex-preferred-size:100%;
+flex-basis:100%;*/
+position: relative;
+float:left;
+background: #FFFFFF;
+max-height: 100%;
+justify-content: space-between;
+box-sizing:border-box;
+flex: 10%;
+max-width: 12%;
+}
+
+.columnas {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+}
+
+
+
+/*HAMBURGER*/
+.menu-btn{position:absolute;
+display:inline-block;
+right:4rem;
+top:1.65rem;
+cursor:pointer}
+
+.menu-btn div{
+position:absolute;
+left:-0.75rem;
+top:64%;
+/*padding-right:0.6rem;
+line-height:1.2;
+*/
+margin-top:-0.15em;
+font-size:18px;
+font-weight:200;
+vertical-align:middle;
+z-index:99}
+
+/*HAMBURGER STYLE*/
+.hamburger-box{position:relative; display:inline-block; width:40px;height:24px}
+.hamburger-inner{top:50%; display:block; margin-top:-2px}
+.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{position:absolute; width:30px; height:3px;transition-timing-function:ease;transition-duration:.15s;transition-property:transform;border-radius:4px;background-color:#989da1}
+.hamburger-inner:after,.hamburger-inner:before{display:block;content:""}
+.hamburger-inner:before{top:-10px}
+.hamburger-inner:after{bottom:-10px}
+.hamburger-box:hover .hamburger-inner, .hamburger-box:hover .hamburger-inner::before, .hamburger-box:hover .hamburger-inner::after {background:#0394D6;}
+
+
+.hamburger--spin .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
+.hamburger--spin .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
+.hamburger--spin .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
+.hamburger--spin.is-active .hamburger-inner{transition-delay:.12s;transition-timing-function:cubic-bezier(.215,.61,.355,1);transform:rotate(225deg)}
+.hamburger--spin.is-active .hamburger-inner:before{top:0;transition:top .1s ease-out,opacity .1s ease-out .12s;opacity:0}
+.hamburger--spin.is-active .hamburger-inner:after{bottom:0;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;transform:rotate(-90deg)}
+.hamburger--spin-r .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
+.hamburger--spin-r .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
+.hamburger--spin-r .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
+.hamburger--spin-r.is-active .hamburger-inner{transition-delay:.12s;transition-timing-function:cubic-bezier(.215,.61,.355,1);transform:rotate(-225deg)}
+.hamburger--spin-r.is-active .hamburger-inner:before{top:0;transition:top .1s ease-out,opacity .1s ease-out .12s;opacity:0}
+.hamburger--spin-r.is-active .hamburger-inner:after{bottom:0;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;transform:rotate(90deg); }
+
+/*HAMBURGER STYLE
+.menu-btn span{display:block;
+width:1.5rem;
+height:2px;
+margin:4px 0;
+background:#989da1;
+z-index:99}
+
+.menu-btn span:hover{
+background:#000000;
+}
+/*MENU STYLE*/
+.responsive-menu{
+display:none;
+position:absolute;
+right:0;
+top:4.35rem;
+font-size:18px;
+font-weight:100;
+border-bottom:#ededed solid 1px;
+border-left:#ededed solid 1px;
+-webkit-box-shadow:0 2px 2px 0 #f5f5f5;
+-moz-box-shadow:0 2px 2px 0 #f5f5f5;
+box-shadow:0 2px 2px 0 #f5f5f5;
+border-top:#ededed solid 1px;
+width:12rem;
+box-sizing:border-box;
+background:#fff;
+}
+/*––––––––––––––––––––––*/
+.responsive-menu .menu-header{display:block}
+.responsive-menu .menu-header ul{background:#fff;
+position:relative;
+display:block}
+/*MENU BACKGROUND*/
+.responsive-menu .menu-header li{
+background:#fff;
+float:none;
+line-height:3.25rem;
+width:100%;
+text-align:center;
+border-bottom:#ededed solid 1px;
+position:relative;
+padding:0; color:#989da1;}
+
+.responsive-menu .menu-header li:hover { background-color:#61CBFF; color:#FFFFFF}
+.responsive-menu .menu-header li:hover .menu {color:#FFFFFF;}
+.responsive-menu .menu-header li a {margin: 0px; display: block; width: 100%; height: 100%;}
+
+/*.responsive-menu .menu-header li:last-child{border-bottom:0}*/
+.expand{display:block!important}
+/*SUBMENU STYLE*/
+.responsive-menu .menu-header li .sub-menu{display:none;
+font-size:15px; background-color:red;}
+.responsive-menu .menu-header li .sub-menu li{border-bottom:0;
+line-height:2.5rem; background-color:#d4f2ff;}
+.responsive-menu .menu-header li .sub-menu li:hover {background-color:#9be0ff;}
+/*+ - STYLE*/
+.open-menu-link{display:none;
+position:absolute;
+right:1.2rem;
+top:0;
+line-height:2.8rem;
+color:#989da1;
+font-size:24px;
+cursor:pointer}
+.open-menu-link:hover {color:#FFFFFF}
+.responsive-menu .menu-header li .visible{display:block}
+
+@media(max-width:90em){
+.FRAME {
+flex: 10%;
+max-width: 12%;
+}
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 24px; margin-top:0rem;}
+}
+
+
+@media(max-width:56em){
+/*.diapos { height: 50rem;}*/
+.FRAME {
+flex: 18%;
+max-width: 25%; margin: 0.5rem;
+}
+.titulos3 {font-size:24px}
+.itemscabecera {margin: 4rem 1rem 1rem 0;}
+.cabecera {padding: 1rem 0rem 0rem 0rem ;}
+
+.itemscabecera.icon.cli span, .itemscabecera.icon.labo span, .itemscabecera.icon.cata span{
+padding-right: 40px;
+background-size: 34px auto;
+}
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 40px; margin-top:1rem;}
+.ion-arrow-right-c {font-size:42px; position: relative; top: 5px;}
+
+}
+
+
+@media(max-width:40em){
+.responsive-menu {
+    font-size: 24px;
+}
+.responsive-menu .menu-header li .sub-menu {
+    font-size: 20px;
+}
+.responsive-menu,.responsive-menu .menu-header,.responsive-menu .menu-header .menu{width:100%}
+.responsive-menu .menu-header li{text-align:center}
+.diapos { height: 26rem;}
+.panoslides {top:25px}
+
+.jssorb031 {bottom:0px;}
+/*.jssora052 {height:40px;}*/
+
+.FRAME {
+flex: 31%;
+max-width: 31%; margin: 0.15rem;
+}
+.IMAGECOL {border: 0.12rem solid #B8B8B8;
+border-radius: 0.25rem;}
+
+.itemscabecera {margin: 0.1rem; width: 26%; padding: 6px; }
+.cabecera {padding: 4rem 0rem 0rem 0rem ;}
+.titulos {
+font-size:30px;
+margin: 0.85rem 0 1.5rem 1rem; }
+.titulos2 {margin: 0.85rem 0 0.5556rem 1rem;}
+/*.jssor_2 {top: 0;
+height: 170px;}*/
+.titulos3 {font-size: 16px;}
+.itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
+#jssor_2, #jssor_3 {height: 17rem;}
+.titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
+.prix {margin: 1rem;
+height: 30px;
+line-height: 230%;
+font-size: 28px;}
+.euro {margin: 0rem;}
+.refe {font-size: 12px; margin: 0.5rem;}
+.vermas {font-size: 40px; margin: 0.25rem 0;}
+
+}
+@media(max-width:33rem){
+
+.vermas {display:none;}
+}
+
+
+
+@media(min-width:1500px){
+	#jssor_4 {display: block; 
+}
+	#jssor_1 {display: none;
+}
+.cabecera {padding: 6rem 8rem 0rem 8rem ;}
+}
