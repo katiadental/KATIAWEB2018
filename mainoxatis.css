@@ -185,7 +185,9 @@ right:1.35rem; top: 1rem; font-size:36px;
 
 .header-login a:hover {color:#0394D6}
 
-
+#headerInfoCart {
+    top: 1.5rem; right: 8rem; background-image: url(https://image.flaticon.com/icons/svg/73/73269.svg);
+}
 .btn{background:green;
 color:#fff}
 
