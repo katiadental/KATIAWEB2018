@@ -157,7 +157,7 @@ height:auto;
 display:block;
 padding:0;
 z-index:10000;
-margin:0.25rem 0 0 0.8rem;
+margin:-1rem 0 0 0.8rem;
 }
 .header a {color: #989da1}
 .header a:hover {color: #ffffff}
@@ -186,7 +186,7 @@ right:1.35rem; top: 1rem; font-size:36px;
 .header-login a:hover {color:#0394D6}
 
 #headerInfoCart {
-    top: 1.5rem; right: 8rem; background-image: url(https://image.flaticon.com/icons/svg/73/73269.svg);
+    top: 1.5rem; right: 8rem; background-image: url(https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/ICO_SHOPPING.svg) no-repeat 0px;
 }
 .btn{background:green;
 color:#fff}
