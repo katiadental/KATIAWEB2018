@@ -183,7 +183,7 @@ padding:0 20px; }*/
 right:1.35rem; top: 1rem; font-size:36px;
 }
 
-.ion-android-person {color:#0394D6}
+.ion-android-person:hover {color:#0394D6}
 
 
 
@@ -266,7 +266,7 @@ text-align:center;
 .titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.4rem; flex-grow: 1;
 }
 .promomain {font-weight: 400;
-    font-size: 22px;} 
+    font-size: 22px; line-height: 120%;} 
 
 .prix {margin:1rem; font-size: 28px; line-height: 160%; color: red; font-weight:500; height: 0px;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
