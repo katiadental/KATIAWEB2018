@@ -511,6 +511,9 @@ margin: 0 15px;
 background: none;
 }
 
+#poweredby a span, #copyright span {
+    color: #666;
+}
 #cartContainer #listProductsArea {
 background-color: #fff;
 border:1px solid #ccc;
