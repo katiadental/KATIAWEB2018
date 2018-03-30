@@ -125,17 +125,6 @@ background-position:bottom right;
 .blockshortcut {top: 0.5rem; position: absolute; left: 13.5rem; border:0!important}
 
 
-.blockbtn {
-    background-color: #fff;
-    background-image: url(http://www.katiadental.com/Files/113993/Img/09/ICO-SEARCH.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30px;
-    border-radius: 0 4px 4px 0;
-    width: 35px;
-    border: none;
-    text-indent: 30px;
-}
 /*TEXTOS*/
 .titulos {color: #848182;
 position: relative;
