@@ -395,7 +395,7 @@ z-index:99}
 .hamburger-box:hover .hamburger-inner, .hamburger-box:hover .hamburger-inner::before, .hamburger-box:hover .hamburger-inner::after {background:#0394D6;}
 
 
-.hamburger--spin .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
+/*.hamburger--spin .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
 .hamburger--spin .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
 .hamburger--spin .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
 .hamburger--spin.is-active .hamburger-inner{transition-delay:.12s;transition-timing-function:cubic-bezier(.215,.61,.355,1);transform:rotate(225deg)}
