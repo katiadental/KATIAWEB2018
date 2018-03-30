@@ -35,9 +35,9 @@
 <meta property="twitter:url" content="https://www.katiadental.com">
 
 <link href="https://fonts.googleapis.com/css?family=Encode+Sans:Thin,Extra-Light,Light,Regular,Medium,Semi-Bold,Bold,Extra-Bold,Black" rel="stylesheet">
-<!--<link rel="stylesheet" type="text/css" media="all" href="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/main.css">-->
+<!--<link rel="stylesheet" type="text/css" media="all" href="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/mainoxatis.css">-->
 
-<link type="text/css" rel="stylesheet" href="main.css"/>
+<link type="text/css" rel="stylesheet" href="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/mainoxatis.css"/>
 <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/css/ionicons.css"/>
 
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jquery.js"></script>
@@ -60,8 +60,31 @@ body.PB a, body.PB a:link {color:#989da1}
 .header-login svg, .header-login{
 /*width:40px;*/
 height:50px}
-#blocksearch .blockbtn {background-color:#9FA3A7}
-
+#blocksearch .blockbtn {background-color:#fff; -moz-filter: saturate(0) brightness(1);
+-o-filter: saturate(0) brightness(1);
+-ms-filter: saturate(0) brightness(1);
+-webkit-filter: saturate(0) brightness(1);
+filter: saturate(0) brightness(1);}
+#blocksearch .blockbtn:hover {background-color:#fff; -moz-filter: saturate(120%) brightness(1);
+-o-filter: saturate(120%) brightness(1);
+-ms-filter: saturate(120%) brightness(1);
+-webkit-filter:saturate(120%) brightness(1);
+filter: saturate(120%) brightness(1);}
+#blocksearch .searchimg {
+    display: none;}
+#headerInfoCart {
+    top: 1.1rem; right: 8rem; height: 30px;
+    padding: 0.5rem 0rem 0rem 2.5rem; -moz-filter: saturate(0) brightness(1);
+-o-filter: saturate(0) brightness(1);
+-ms-filter: saturate(0) brightness(1);
+-webkit-filter: saturate(0) brightness(1);
+filter: saturate(0) brightness(1);
+}
+#headerInfoCart:hover {-moz-filter: saturate(120%) brightness(1);
+-o-filter: saturate(120%) brightness(1);
+-ms-filter: saturate(120%) brightness(1);
+-webkit-filter:saturate(120%) brightness(1);
+filter: saturate(120%) brightness(1);}
 </style>
 
 </head>
@@ -73,6 +96,26 @@ height:50px}
 
 <!--MENU-->
 <div class="header">
+<!--SHOPPING CART-->
+<div class="eshopCart">
+<div id="headerInfoCart" style="background-image:url(http://www.katiadental.com/Files/113993/Img/18/ICO-SHOPPING.png); background-repeat: no-repeat; "><a class="cartLink" href="PBShoppingCart.asp?PBMInit=1"><span>Tu cesta</span></a> : <span class="cartPrice">0,00 EUR</span><div data-fragment="listTemplate" id="cartContainer" class="">
+<div data-target="headLine" class="designBackColorMain designTextColorMain" id="titleArea">
+    <a href="/PBShoppingCart.asp?PBMInit=1">  <span class="PBMainTxt">0 artículo (s) en mi cesta</span> </a>
+</div>
+    <ul data-target="productLine" id="listProductsArea" class="designBackColorTer"></ul>
+	<div id="ZoneCart" class="designBackColorMain designTextColorMain">
+    <div data-target="total" id="totalzone">
+    <div id="totalShoppingCarttitle">Total :</div>    
+    
+    
+    <div id="totalShoppingCart"><span class="PBCurrency">0,00 EUR</span></div>
+     
+</div>
+    <div id="zoneseeyourcart" class="designColorMain"><a class="btnmain" id="seeyourcart" href="/PBShoppingCart.asp?PBMInit=1"><span>Ver mi cesta</span></a></div>
+    <div id="cartreinsurance"></div>
+	</div>
+	</div></div></div>
+<!--END SHOPPING CART--> 
 <!--LOGIN-->
 <div class="header-login">
 <a href="#" class="ion-android-person">
@@ -85,7 +128,7 @@ height:50px}
 <!--BUSQUEDA-->
 <div class="blockshortcut" id="blocksearch" style="">
 <div class="blockarea" ><input type="text" id="searchformtext" name="searchformtext" class="searchtext" value="" size="18" onkeyup="if ((event.keyCode?event.keyCode:event.charCode)==13) submitsearchForm();" autocomplete="off">
-<span class="searchimg"></span><input type="button" class="blockbtn" id="searchformBtn" name="searchformBtn" value="Buscar" onclick="submitsearchForm();">
+<span class="searchimg"></span><input type="button" class="blockbtn" style="background-image: url(http://www.katiadental.com/Files/113993/Img/09/ICO-SEARCH.png); background-position: center; background-repeat: no-repeat; border-radius: 0; border:0; text-indent: -500px; padding-left: 30px;" id="searchformBtn" name="searchformBtn" value="Buscar" onclick="submitsearchForm();">
 </div>
 </div>
 <!--FIN BUSQUEDA-->
@@ -387,7 +430,7 @@ height:50px}
 
 <section style="margin-bottom:3rem" >
 <!--PRODUCTOS POR MARCAS-->
-<div class="titulos titulos2" style="left:3%">PRODUCTOS POR MARCAS</div>
+<div class="titulos" style="left:3%">PRODUCTOS POR MARCAS</div>
 <div class="columnas">
 <!--FILA 01-->
 <div class="FRAME">
@@ -449,10 +492,43 @@ height:50px}
 </section>
 
 <footer>
+
 <div style="background:#b7b7b7; height:10rem;">
-<div id="footermenu"><ul id="fmenu"><li class="begin">&nbsp;</li><li class="mitext"><a class="menu" href="PBCPPlayer.asp?ID=1598192">Gastos de envío</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598191">Medios de pago</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598194">Condiciones Generales de Venta</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598195">Aviso Legal</a></li><li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598197">Contacto</a></li><li class="miimg"><a class="menu" target="_blank" href="https://www.facebook.com/katiaproductosdentales?fref=ts"><img src="Files/113993/facebook.png"/></a></li><li class="miimg"><a class="menu" target="_blank" href="https://twitter.com/KatiaDental"><img src="Files/113993/twitter.png"/></a></li><li class="miimg"><img src="Files/113993/payment.png"/></li><li class="end">&nbsp;</li></ul></div><div id="copyright"><span>Copyright © 2014 - Informaciones legales de tu empresa</span></div><div id="poweredby"><a href="https://www.xopie.com" rel="nofollow" target="_blank"><span>Crear tienda online con Xopie</span></a></div></div>
-
-
+<div id="footermenu">
+<ul id="fmenu">
+<li class="begin">&nbsp;</li>
+<li class="mitext">
+<a class="menu" href="PBCPPlayer.asp?ID=1598192">Gastos de envío</a>
+</li>
+<li class="mitext menusep">
+<a class="menu" href="PBCPPlayer.asp?ID=1598191">Medios de pago</a>
+</li>
+<li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598194">
+Condiciones Generales de Venta</a>
+</li>
+<li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598195">
+Aviso Legal</a>
+</li>
+<li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598197">
+Contacto</a>
+</li>
+<li class="miimg"><a class="menu" target="_blank" href="https://www.facebook.com/katiaproductosdentales?fref=ts"><img src="Files/113993/facebook.png"/></a>
+</li>
+<li class="miimg"><a class="menu" target="_blank" href="https://twitter.com/KatiaDental">
+<img src="Files/113993/twitter.png"/></a>
+</li>
+<li class="miimg"><img src="Files/113993/payment.png"/></li>
+<li class="end">&nbsp;</li>
+</ul>
+</div>
+<div id="copyright">
+Copyright © 2014 - Informaciones legales de tu empresa</div>
+<div id="poweredby">
+<a href="https://www.xopie.com" rel="nofollow" target="_blank">
+Crear tienda online con Xopie</a>
+</div>
+</div>
 </footer>
+
 
 </div></body></html>
