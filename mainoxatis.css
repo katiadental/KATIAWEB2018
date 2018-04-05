@@ -249,7 +249,7 @@ text-decoration: none;
 text-align:center;
 }
 
-.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.4rem; flex-grow: 1;
+.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.15rem; flex-grow: 1;
 }
 .promomain {font-weight: 400;
     font-size: 22px; line-height: 120%;} 
