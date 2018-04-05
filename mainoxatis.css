@@ -256,7 +256,7 @@ text-align:center;
 
 .prix {font-size: 28px; color: red; font-weight:500; height: 0px; margin:0;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
-.refe {font-size: 14px; line-height: 100%;color: #848182; font-weight:300;}
+.refe {font-size: 14px; line-height: 120%;color: #848182; font-weight:300;}
 .vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
 .ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
 
