@@ -66,7 +66,7 @@ jssor_4_slider_init = function() {
                     jssor_4_slider.$ScaleSize(expectedWidth, expectedHeight, MAX_BLEEDING);
 
                     //position slider at center in vertical orientation
-                    jssor_4_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 0) + "px";
+                    jssor_4_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
 
                     //position slider at center in horizontal orientation
                     jssor_4_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
@@ -123,49 +123,45 @@ jssor_1_slider_init = function() {
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
-
-jssor_2_slider_init = function() {
+  jssor_2_slider_init = function() {
 
             var jssor_2_options = {
               $AutoPlay: 0,
-              /*$AutoPlaySteps: 5,*/
+              $AutoPlaySteps: 5,
               $SlideDuration: 250,
-              $FillMode: 2,
+              $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 250,
-              $SlideHeight: 250,
+              $SlideWidth: 225,
+              $SlideHeight: 225,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
-                $Steps: 3
+                $Steps: 5
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
-                $SpacingY: 10
+                $SpacingY: 30
               }
             };
 
-           
-
             var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
-           //#region responsive code begin
-            //the following code is to place slider in the center of parent container with no scale
-            function ScaleSlider() {
+            /*#region responsive code begin*/
 
+            var MAX_WIDTH = 1600;
+
+            function ScaleSlider() {
                 var containerElement = jssor_2_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
-                    var expectedWidth = Math.min(containerWidth, jssor_2_slider.$OriginalWidth());
 
-                    //scale the slider to original height with no change
-                    jssor_2_slider.$ScaleSize(expectedWidth, jssor_2_slider.$OriginalHeight());
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-                    /*jssor_2_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 0) + "px";*/
+                    jssor_2_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 120);
+                    window.setTimeout(ScaleSlider, 30);
                 }
             }
 
@@ -174,51 +170,47 @@ jssor_2_slider_init = function() {
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //#endregion responsive code end
+            /*#endregion responsive code end*/
         };
-
 jssor_3_slider_init = function() {
 
             var jssor_3_options = {
               $AutoPlay: 0,
-              /*$AutoPlaySteps: 5,*/
+              $AutoPlaySteps: 5,
               $SlideDuration: 250,
-              $FillMode: 2,
+              $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 250,
-              $SlideHeight: 250,
+              $SlideWidth: 225,
+              $SlideHeight: 225,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
-                $Steps: 3
+                $Steps: 5
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$,
-                $SpacingY: 10
+                $SpacingY: 30
               }
             };
 
-           
-
             var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
 
-           //#region responsive code begin
-            //the following code is to place slider in the center of parent container with no scale
-            function ScaleSlider() {
+            /*#region responsive code begin*/
 
+            var MAX_WIDTH = 1600;
+
+            function ScaleSlider() {
                 var containerElement = jssor_3_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
-                    var expectedWidth = Math.min(containerWidth, jssor_3_slider.$OriginalWidth());
 
-                    //scale the slider to original height with no change
-                    jssor_3_slider.$ScaleSize(expectedWidth, jssor_3_slider.$OriginalHeight());
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-                    /*jssor_2_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 0) + "px";*/
+                    jssor_3_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 120);
+                    window.setTimeout(ScaleSlider, 30);
                 }
             }
 
@@ -227,5 +219,5 @@ jssor_3_slider_init = function() {
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //#endregion responsive code end
+            /*#endregion responsive code end*/
         };
