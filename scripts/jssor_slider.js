@@ -131,8 +131,8 @@ jssor_1_slider_init = function() {
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 225,
-              $SlideHeight: 225,
+              $SlideWidth: 250,
+              $SlideHeight: 250,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
@@ -182,8 +182,8 @@ jssor_3_slider_init = function() {
               $SlideDuration: 250,
               $FillMode: 4,
               $PauseOnHover: 3,
-              $SlideWidth: 225,
-              $SlideHeight: 225,
+              $SlideWidth: 250,
+              $SlideHeight: 250,
               $SlideSpacing: 30,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$,
@@ -197,22 +197,23 @@ jssor_3_slider_init = function() {
 
             var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
 
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1600;
-
+           //#region responsive code begin
+            //the following code is to place slider in the center of parent container with no scale
             function ScaleSlider() {
+
                 var containerElement = jssor_3_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
+                    var expectedWidth = Math.min(containerWidth, jssor_3_slider.$OriginalWidth());
 
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                    //scale the slider to original height with no change
+                    jssor_3_slider.$ScaleSize(expectedWidth, jssor_3_slider.$OriginalHeight());
 
-                    jssor_3_slider.$ScaleWidth(expectedWidth);
+                    /*jssor_2_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 0) + "px";*/
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider, 120);
                 }
             }
 
@@ -221,5 +222,5 @@ jssor_3_slider_init = function() {
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
+            //#endregion responsive code end
         };
