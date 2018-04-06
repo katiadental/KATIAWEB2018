@@ -42,7 +42,7 @@
 
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jquery.js"></script>
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jquery-migrate.min.js"></script>
-<!--SCRIPT MENU-->
+<!--SCRIPT MENU
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/controls.js"></script>
 <!--SCRIPT MENU-->
 <!--MENU DESPLEGABLE HAMBURGER-->
@@ -54,10 +54,106 @@
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jssor_slider.js"></script>
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/busqueda.js"></script>
 
+<!--MENU DESPLEGABLE HAMBURGER-->
+<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/ik-js.js"></script>
+<!--MENU DESPLEGABLE HAMBURGER-->
+
 <style>
 body.PB {text-align:left;}
-body.PB a, body.PB a:link {color:#989da1}
-.header-login svg, .header-login{
+/*MODAL POPUP*/
+.bts-popup {
+position: fixed;
+overflow:auto;
+left: 0;
+top: 0;
+height: 100%;
+width: 0%;
+background-color: rgba(0, 25, 28, 0.55);
+opacity: 0;
+visibility: hidden;
+-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+transition: opacity 0.3s 0s, visibility 0s 0.3s;
+z-index: 9000;
+}
+.bts-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 1s 0s, visibility 1s 0s;
+  -moz-transition: opacity 1s 0s, visibility 1s 0s;
+  transition: opacity 1s 0s, visibility 1s 0s;
+  width:100%;
+}
+
+.bts-popup-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 8em auto;
+  text-align: center;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.bts-popup .close {
+position: relative;
+top: 28px;
+    right: -285px;
+    transition: all 0.2s;
+    font-size: 32px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 0%;
+  z-index:9999;
+}
+.bts-popup .close:hover {
+  color: #1461A7;
+}
+
+.FOLLETO { opacity: 0;
+  visibility: hidden;}
+.FOLLETO.is-visible
+{opacity: 1;
+  visibility: visible;
+-webkit-animation: spin1 0.5s 1 linear;
+-moz-animation: spin1 0.5s 1 linear;
+-o-animation: spin1 0.5s 1 linear;
+-ms-animation: spin1 0.5s 1 linear;
+animation: spin1 0.5s 1 linear;
+
+}
+
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: scale(0.1)}
+100% { -webkit-transform: scale(1)}
+}
+@-moz-keyframes spin1 {
+0% { -webkit-transform: scale(0.1)}
+100% { -webkit-transform: scale(1)}
+}
+@-o-keyframes spin1 {
+0% { -webkit-transform: scale(0.1)}
+100% { -webkit-transform: scale(1)}
+}
+@-ms-keyframes spin1 {
+0% { -webkit-transform: scale(0.1)}
+100% { -webkit-transform: scale(1)}
+}
+@-keyframes spin1 {
+0% {-webkit-transform: scale(0.1)}
+100% { -webkit-transform: scale(1)}
+} 
+
+/*FIN MODAL POPUP*/
+	
+.header-login{
 /*width:40px;*/
 height:50px}
 #blocksearch .blockbtn {background-color:#fff; -moz-filter: saturate(0) brightness(1);
@@ -85,6 +181,39 @@ filter: saturate(0) brightness(1);
 -ms-filter: saturate(120%) brightness(1);
 -webkit-filter:saturate(120%) brightness(1);
 filter: saturate(120%) brightness(1);}
+.ion-android-person {color:#red}
+.marcopromo {height:100%;}
+.marcopromo li {
+  justify-content: center;
+   /* display: flex;
+flex-direction: column;
+  text-align: center;*/}
+
+li.titulos.titulospromo {
+    height: 200px; 
+  }
+li.titulos.prix {
+  }
+li.titulos.refe {
+  }
+/*.prix {line-height:none; margin:0;}
+.refe {line-height:160%; margin: auto;} */ 
+.calendario {display:flex; 
+flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; 
+	border: 1px solid black; 
+	width: 100%; 
+	min-width:380px; 
+	padding: 0 20px;  
+	border-radius: 6px; 
+	justify-content: center;}
+
+.blank {width: 36px;}
+
+
+@media only screen and (max-width: 830px) {.blank {width: 500px;}
+}
 </style>
 
 </head>
@@ -117,10 +246,12 @@ filter: saturate(120%) brightness(1);}
 	</div></div></div>
 <!--END SHOPPING CART--> 
 <!--LOGIN-->
-<div class="header-login">
-<a href="#" class="ion-android-person">
+<div class="header-login" >
+<a href="http://www.katiadental.com/PBZoneLogin.asp?CCode=21&CPID=1762244" class="ion-android-person">
 </a>
 </div>
+<!--END LOGIN-->
+
 <!--LOGO-->
 <div class="logo">
 <a href="http://www.katiadental.com/" title="Katiadental" rel="home"><img src="http://www.katiadental.com/Files/113993/Img/18/KATIA-LOGO-flat.png" alt="LogoKatia" width="180"></a>
@@ -160,13 +291,16 @@ filter: saturate(120%) brightness(1);}
 <li id="menu-item-04" class=""><a href="http://www.katiadental.com/novedades-c102x2626125">Novedades</a></li>
 <li id="menu-item-05" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1713259">Vídeos</a></li>
 <li id="menu-item-06" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1906466">Instrucciones</a></li>
-<li id="menu-item-07" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766357">Formación</a></li>
+<li id="menu-item-07" class=""><a href="https://newtry.oxatis.com/PBCPPlayer.asp?ADContext=1&ID=1940427">Formación</a></li>
 <li id="menu-item-08" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1762244">Descargas</a></li>
 </ul>
 </div>
 </div>
 </div>
 <!--HAMBURGER END-->
+<!--HAMBURGER SCRIPT-->
+<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/hamburgermenu.js"></script>
+<!--FIN HAMBURGER SCRIPT-->
 </div>
 <!--FIN MENU-->
 
@@ -182,23 +316,29 @@ filter: saturate(120%) brightness(1);}
                 <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" alt="spin" />
             </div>
             <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:2800px;height:310px;overflow:hidden;">
-                <div style="background-color:#136CD0;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001Long.jpg" alt="AquaSL" />
+			<div style="background-color:#ffffff;" data-p="388.75"><a href="https://newtry.oxatis.com/PBCPPlayer.asp?ADContext=1&ID=1940427">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/08/007long.gif" alt="CursoMAD" /></a>
             </div>
-            <div style="background-color:#FEEA89;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/21/002Long.jpg" alt="Alginatos"/>
+			<div style="background-color:#ffffff;" data-p="388.75"><a href="http://www.katiadental.com/novedades-ortodoncia-c102x3494372">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/19/008long.gif" alt="M.A.D." /></a>
             </div>
-            <div style="background-color:#BDE7C3;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/14/003Long.jpg" alt="Uniko"/>
+                <div style="background-color:#136CD0;" data-p="388.75"><a href="https://leone.it/espanol/ortodoncia/novedades/aqua_sl.php">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001Long.jpg" alt="AquaSL" /></a>
             </div>
-            <div style="background-color:#FE8783;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/004Long.jpg" alt="Alambre"/>
+            <div style="background-color:#FEEA89;" data-p="388.75"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766355">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/21/002Long.jpg" alt="Alginatos"/></a>
             </div>
-            <div style="background-color:#5996D5;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/005Long.jpg" alt="OrthoStrip"/>
+            <div style="background-color:#BDE7C3;" data-p="388.75"><a href="http://www.katiadental.com/fisiodispensador-con-luz-c2x16559954">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/14/003Long.jpg" alt="Uniko"/></a>
             </div>
-            <div style="background-color:#000000;" data-p="388.75">
-                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/15/006Long.jpg" alt="Pop"/>
+            <div style="background-color:#FE8783;" data-p="388.75"><a href="http://www.katiadental.com/alambre-trenzado-plano-para-splinting-c2x16560738">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/004Long.jpg" alt="Alambre"/></a>
+            </div>
+            <div style="background-color:#5996D5;" data-p="388.75"><a href="http://www.katiadental.com/-bandeja-intensiv-tray-c2x23400060" >
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/005Long.jpg" alt="OrthoStrip"/></a>
+            </div>
+            <div style="background-color:#000000;" data-p="388.75"><a href="https://www.leone.it/espanol/servicios/download/Depliant_POP_Esp.pdf">
+                <img data-u="image" src="http://www.katiadental.com/Files/113993/Img/15/006Long.jpg" alt="Pop"/></a>
             </div>
             </div>
             <!-- Bullet Navigator -->
@@ -236,6 +376,8 @@ filter: saturate(120%) brightness(1);}
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" alt="Tempo"/>
         </div>
         <div class="panoslides" data-u="slides">
+            <div data-p="201.25" ><a href="https://newtry.oxatis.com/PBCPPlayer.asp?ADContext=1&ID=1940427"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/007top.gif" alt="CursoMAD"/></a></div>
+             <div data-p="201.25" ><a href="http://www.katiadental.com/novedades-ortodoncia-c102x3494372"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/008top.gif" alt="M.A.D."/></a></div>
             <div data-p="201.25" ><a href="https://leone.it/espanol/ortodoncia/novedades/aqua_sl.php"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001TOP.jpg" alt="AquaSL"/></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766355"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/09/002.jpg" alt="Alginatos"></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/fisiodispensador-con-luz-c2x16559954"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/18/004.jpg" alt="UNIKO"/></a></div>
@@ -267,11 +409,50 @@ filter: saturate(120%) brightness(1);}
     <!-- #endregion Jssor Slider End -->
 </section>
 <!--END SLIDERTOP-->
+
+<!--BOTONERA-->
 <section class="cabecera">
-<div class="itemscabecera cli icon cli"><a href="http://www.katiadental.com/clinica-c102x2625763" class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Clínica dental</span></a></div>
-<div class="itemscabecera lab icon labo"><a href="http://www.katiadental.com/laboratorio-c102x2625760"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Laboratorio dental</span></a></div>
+<div class="itemscabecera cli icon cli"><a href="http://www.katiadental.com/clinica-c102x2625763" class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Clínica</span></a></div>
+<div class="itemscabecera lab icon labo"><a href="http://www.katiadental.com/laboratorio-c102x2625760"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Laboratorio</span></a></div>
 <div class="itemscabecera cat icon cata"><a href="https://view.publitas.com/katia-dental/catalogo-katia-2018"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Catálogo online</span></a></div>
 </section>
+<!--FIN BOTONERA-->
+
+
+
+
+<!--KALENDARIO-->
+<section style="margin-bottom:3rem" >
+<div class="titulos" style="left:3%; margin: 2rem 0 2rem 0rem;">CALENDARIO</div>
+<div class="columnas">
+<!--CONTENIDO-->
+<div class="FRAME calendario">
+<div id="kal01" class="" ><a class="promo" href="http://www.katiadental.com/cadenitas-elasticas-c2x25561646">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Cadenitas elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE430-101</li></ul></a></div>
+</div>
+
+<!--SPACE-->
+<div><img class="blank" src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="300" height="15" align="center" border="0" style="display:block"/></div>
+<!--FIN SPACE-->
+
+<div class="FRAME calendario">
+<div id="kal02" class=""><a class="promo" href="http://www.katiadental.com/ligaduras-elasticas-c2x25559601">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Ligaduras elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE404-00</li></ul></a></div>
+
+<!-- FIN CONTENIDO-->
+</div>
+</div>
+</section>
+<!--FIN KALENDARIO-->
+
+
+
+<script type="text/javascript" src="//localendar.com/js/PublishedResponsiveIframe.js"></script>
+<iframe style="width:100%"; id="localendar-iframe" src="//localendar.com/public/danielillo?style=M6"></iframe>
+
+
 
 <section>
 <div class="titulos" style="left:3%">NOVEDADES
@@ -286,34 +467,63 @@ filter: saturate(120%) brightness(1);}
         </div>
 <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1370px;height:290px;overflow:hidden;">
 
-<div id="promo1" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/cadenitas-elasticas-c2x25561646"><p class="titulos titulospromo promomain">Cadenitas elásticas</p><p class="titulos prix">25,70<span class="euro"> €</span></p><p class="titulos refe">OE430-101</p></a></div>
+<div id="promo1" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/cadenitas-elasticas-c2x25561646">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Cadenitas elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE430-101</li></ul></a></div>
 
-<div id="promo2" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/ligaduras-elasticas-c2x25559601"><p class="titulos titulospromo promomain">Ligaduras elásticas</p><p class="titulos prix">25,70<span class="euro"> €</span></p><p class="titulos refe">OE404-00</p></a></div>
+<div id="promo2" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/ligaduras-elasticas-c2x25559601">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Ligaduras elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE404-00</li></ul></a></div>
 
-<div id="promo3" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/retractor-para-foto-oclusal-eez-c2x25560794"><p class="titulos titulospromo promomain">Retractor para foto<br>oclusal EEZ</p><p class="titulos prix">35,60<span class="euro"> €</span></p><p class="titulos refe">OY84516</p></a></div>
+<div id="promo3" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/retractor-para-foto-oclusal-eez-c2x25560794">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Retractor para foto<br>oclusal EEZ</li><li class="titulos prix">35,60<span class="euro"> €</span></li><li class="titulos refe">OY84516</li></ul></a></div>
 
-<div id="promo4" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/separadores-para-foto-doble-lado-c2x25560920"><p class="titulos titulospromo promomain">Separador para foto<br>doble lado</p><p class="titulos prix">35,60<span class="euro"> €</span></p><p class="titulos refe">OYDT155</p></a></div>
+<div id="promo4" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/separadores-para-foto-doble-lado-c2x25560920">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Separador para foto<br>doble lado</li><li class="titulos prix">35,60<span class="euro"> €</span></li><li class="titulos refe">OYDT155</li></ul></a></div>
 
-<div id="promo5" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-antirronquidos-forward-c2x25508810"><p class="titulos titulospromo"><span class="titulospromo promomain">Kit anti-ronquidos</span> Forward</p><p class="titulos prix">89<span class="euro"> €</span></p><p class="titulos refe">LA5300-07</p></a></div>
+<div id="promo5" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-antirronquidos-forward-c2x25508810">
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="titulospromo promomain">Kit anti-ronquidos</span> Forward</li>
+<li class="titulos prix">90,78<span class="euro"> €</span></li>
+<li class="titulos refe">LA5300-07</li>
+</ul></a></div>
 
 
-<div id="promo6" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-telescopico-advancer-c2x25508808"><p class="titulos titulospromo"><span class="titulospromo promomain">Kit</span><br>Telescopic Advancer</p><p class="titulos prix">109<span class="euro"> €</span></p><p class="titulos refe">LA5100-07</p></a></div>
+<div id="promo6" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-telescopico-advancer-c2x25508808">
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="titulospromo promomain">Kit</span><br>Telescopic Advancer</li>
+<li class="titulos prix">111,18<span class="euro"> €</span></li>
+<li class="titulos refe">LA5100-07</li>
+</ul></a>
+</div>
 
-<div id="promo7" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/brackets-aquasl-c102x3482976"><p class="titulos titulospromo"><span class="titulospromo promomain">Brackets cerámica</span> AquaSL</p>
-<p class="titulos prix" >265<span class="euro"> €</span></p><p class="titulos refe" >LF5740-91</p></a></div>
+<div id="promo7" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/brackets-aquasl-c102x3482976">
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="titulospromo promomain">Brackets cerámica</span> AquaSL</li>
+<li class="titulos prix" >265<span class="euro"> €</span></li><li class="titulos refe" >LF5740-91</li></ul></a></div>
 
 <div id="promo8" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/photopol-pro-c2x16559025">
-<p class="titulos titulospromo"><span class="titulospromo promomain">Horno fotocurado LED</span> Photopol Pro</p><p class="titulos prix" >1.560<span class="euro"> €</span></p><p class="titulos refe" >A5406</p>
-</a></div>
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="titulospromo promomain">Horno fotocurado LED</span> Photopol Pro</li><li class="titulos prix" >1.560<span class="euro"> €</span></li><li class="titulos refe" >A5406</li>
+</ul></a></div>
 
 <div id="promo9" data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/photopol-pro-vacuum-c2x16559572" class="promo">
-<p class="titulos titulospromo"><span class="titulospromo promomain">Horno fotocurado LED</span> Photopol Pro Vacuum</p><p class="titulos prix" >1.992<span class="euro"> €</span></p><p class="titulos refe" >A5406V</p></a></div>
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="titulospromo promomain">Horno fotocurado LED</span> Photopol Pro Vacuum</li><li class="titulos prix" >1.992<span class="euro"> €</span></li><li class="titulos refe" >A5406V</li></ul></a></div>
 
-<div id="promo10" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/ormalab-85-5-kg-2-catalizadores-de-60-ml-c2x23229073"><p class="titulos titulospromo">Ormalab 85</p><p class="titulos prix" >59,50<span class="euro"> €</span></p><p class="titulos refe" >M8520</p></a></div>
+<div id="promo10" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/ormalab-85-5-kg-2-catalizadores-de-60-ml-c2x23229073">
+<ul class="marcopromo">
+<li class="titulos titulospromo">Ormalab 85</li><li class="titulos prix" >59,50<span class="euro"> €</span></li><li class="titulos refe" >M8520</li></ul></a></div>
 
-<div id="promo11" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/-bandeja-intensiv-tray-c2x23400060"><p class="titulos titulospromo"><span class="promomain">Bandeja</span><br>Intensive Tray</p><p class="titulos prix" >172,50<span class="euro"> €</span></p><p class="titulos refe" >KL-OST400-070</p></a></div>
+<div id="promo11" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/-bandeja-intensiv-tray-c2x23400060">
+<ul class="marcopromo">
+<li class="titulos titulospromo"><span class="promomain">Bandeja</span><br>Intensive Tray</li><li class="titulos prix" >172,50<span class="euro"> €</span></li><li class="titulos refe" >KL-OST400-070</li></ul></a></div>
 
-<div id="promo12" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-de-limas-doble-c2x24488347"><p class="titulos titulospromo promomain">Kit de limas doble</p><p class="titulos prix" >153<span class="euro"> €</span></p><p class="titulos refe" >KL070</p></a></div>
+<div id="promo12" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-de-limas-doble-c2x24488347">
+<ul class="marcopromo">
+<li class="titulos titulospromo promomain">Kit de limas doble</li><li class="titulos prix" >153<span class="euro"> €</span></li><li class="titulos refe" >KL070</li></ul></a></div>
 </div>
 <!-- Bullet Navigator -->
  <div data-u="navigator" class="jssorb031" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -484,9 +694,7 @@ filter: saturate(120%) brightness(1);}
 
 
 </div>
-<!--HAMBURGER SCRIPT-->
-<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/hamburgermenu.js"></script>
-<!--FIN HAMBURGER SCRIPT-->
+
 <!-- FIN FILA 01-->
 <!--FIN PRODUCTOS POR MARCAS-->
 </section>
@@ -531,4 +739,48 @@ Crear tienda online con Xopie</a>
 </footer>
 
 
-</div></body></html>
+<div>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  
+  window.onload = setTimeout(function (){
+    $(".bts-popup").delay(5000).addClass('is-visible');
+	}, 3000);
+
+window.onload = setTimeout(function (){
+    $(".FOLLETO").delay(5000).addClass('is-visible');
+	}, 3000); 
+	
+	
+	//close popup
+	$('.bts-popup').on('click', function(event){
+		if( $(event.target).is('.close') || $(event.target).is('.bts-popup') || $(event.target).is('.bts-popup-container') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.bts-popup').removeClass('is-visible');
+	    }
+    });
+});
+</script>
+
+  
+<!--POPUP-->    
+<div class="bts-popup" role="alert">
+<div class="bts-popup-container" style="background:#"><a href="#" class="close" style="color:#000000" target="">×</a>
+<div class="FOLLETO is-visible" ><a class="titulos promomain" style="color:#ffffff; line-height: 150%; letter-spacing: 0.02em; font-weight:300;" href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" target=""> <img src="http://www.katiadental.com/Files/113993/Img/16/CURSO-STRIPPING.jpg" width="100%">Clic en el flyer para acceder al formulario de inscripción</a></div>
+</div> 
+</div>
+  
+
+<!--FIN POPUP--></div>
+
+</div>
+
+
+</body></html>
