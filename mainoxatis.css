@@ -154,6 +154,12 @@ margin: 0!important;
     font-weight: 500;
     letter-spacing: 0.05em;
 }	
+.PBShortTxt {
+    font-family: 'Encode sans', sans serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;}
+.qtyBox {text-align:center;}
+
 .webblock .viewtbl:not(.viewtblsplitted) .sectiondata {
     margin-top: 30px;
 }	
