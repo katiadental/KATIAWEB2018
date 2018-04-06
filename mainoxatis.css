@@ -191,7 +191,7 @@ margin:-1rem 0 0 0.8rem;
 right:1.35rem; top: 1rem; font-size:36px;
 }
 
-.ion-android-person:hover {color:#0394D6}
+.ion-android-person:hover {color:#0394D6!important}
 
 .btn{background:green;
 color:#fff}
