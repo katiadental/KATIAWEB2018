@@ -547,7 +547,7 @@ align-content: flex-start;}
 .blank {width: 30px;}
 
 .marcokalen {width:320px;}
-.fotokalenfullwidth {margin-right: auto; margin-left: auto; display: block; width:300;}
+.fotokalenfullwidth {margin-right: auto; margin-left: auto; display: block; width:300px;}
 .kalen {
 min-height:58px;
 margin:12px 8px;
