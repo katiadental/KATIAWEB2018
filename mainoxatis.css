@@ -269,7 +269,9 @@ color: #ffffff;
 text-decoration: none;
 text-align:center;
 }
-
+li.titulos.titulospromo {
+    height: 200px; 
+  }
 .titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.15rem; flex-grow: 1;
 }
 .promomain {font-weight: 400;
@@ -329,6 +331,8 @@ background-repeat:no-repeat; background-position: center; background-size: 90%}
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #EDEDED; background-image: url(http://www.katiadental.com/Files/113993/Img/07/Intensiv-OrthoStrips-KL070-D2.png);
 background-repeat:no-repeat; background-position: center calc(50% - 10px); background-size: 62%}
+ 
+ 
  /*FIN PRUEBA CONTENIDO HTML*/
 		
 .IMAGECOL{/*-ms-flex-preferred-size:100%;
