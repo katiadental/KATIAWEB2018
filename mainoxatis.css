@@ -589,7 +589,7 @@ height: 170px;}*/
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
 #jssor_2, #jssor_3 {height: 17rem;}
-.titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
+.titulospromo {margin: -0.2rem auto auto auto; font-size:22px; height: 160px;}
 .prix {margin: 1rem;
 height: 30px;
 line-height: 230%;
