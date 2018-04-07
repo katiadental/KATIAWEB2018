@@ -533,7 +533,7 @@ flex-wrap: wrap;
 flex-flow: row wrap; 
 background-color: #f9f9f9;
 border: 1px solid #d7d7d7;
-width: 380px; 
+width: 300px; 
  
 /*min-width:380px; padding: 0 20px;border: 1px solid black;*/  
 border-radius: 6px; 
@@ -542,6 +542,7 @@ align-content: flex-start;}
 
 .blank {width: 30px;}
 
+.marcokalen {width:300px;}
 
 .kalen {
 min-height:58px;
