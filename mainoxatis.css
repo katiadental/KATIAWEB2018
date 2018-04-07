@@ -533,9 +533,9 @@ flex-wrap: wrap;
 flex-flow: row wrap; 
 background-color: #f9f9f9;
 border: 1px solid #d7d7d7;
-width: 100%; 
-min-width:380px; 
-/*padding: 0 20px;border: 1px solid black;*/  
+width: 380px; 
+ 
+/*min-width:380px; padding: 0 20px;border: 1px solid black;*/  
 border-radius: 6px; 
 justify-content: center;
 align-content: flex-start;}
