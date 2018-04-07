@@ -181,7 +181,6 @@ filter: saturate(0) brightness(1);
 -ms-filter: saturate(120%) brightness(1);
 -webkit-filter:saturate(120%) brightness(1);
 filter: saturate(120%) brightness(1);}
-.ion-android-person {color:#red}
 .marcopromo {height:100%;}
 .marcopromo li {
   justify-content: center;
@@ -196,24 +195,9 @@ li.titulos.prix {
   }
 li.titulos.refe {
   }
-/*.prix {line-height:none; margin:0;}
-.refe {line-height:160%; margin: auto;} */ 
-.calendario {display:flex; 
-flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap; 
-	border: 1px solid black; 
-	width: 100%; 
-	min-width:380px; 
-	padding: 0 20px;  
-	border-radius: 6px; 
-	justify-content: center;}
-
-.blank {width: 36px;}
 
 
-@media only screen and (max-width: 830px) {.blank {width: 500px;}
-}
+
 </style>
 
 </head>
@@ -291,7 +275,7 @@ flex-wrap: wrap;
 <li id="menu-item-04" class=""><a href="http://www.katiadental.com/novedades-c102x2626125">Novedades</a></li>
 <li id="menu-item-05" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1713259">Vídeos</a></li>
 <li id="menu-item-06" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1906466">Instrucciones</a></li>
-<li id="menu-item-07" class=""><a href="https://newtry.oxatis.com/PBCPPlayer.asp?ADContext=1&ID=1940427">Formación</a></li>
+<li id="menu-item-07" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1940427">Formación</a></li>
 <li id="menu-item-08" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1762244">Descargas</a></li>
 </ul>
 </div>
@@ -376,7 +360,7 @@ flex-wrap: wrap;
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" alt="Tempo"/>
         </div>
         <div class="panoslides" data-u="slides">
-            <div data-p="201.25" ><a href="https://newtry.oxatis.com/PBCPPlayer.asp?ADContext=1&ID=1940427"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/007top.gif" alt="CursoMAD"/></a></div>
+            <div data-p="201.25" ><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1940427"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/12/007top.gif" alt="CursoMAD"/></a></div>
              <div data-p="201.25" ><a href="http://www.katiadental.com/novedades-ortodoncia-c102x3494372"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/008top.gif" alt="M.A.D."/></a></div>
             <div data-p="201.25" ><a href="https://leone.it/espanol/ortodoncia/novedades/aqua_sl.php"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/23/001TOP.jpg" alt="AquaSL"/></a></div>
             <div data-p="201.25"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766355"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/09/002.jpg" alt="Alginatos"></a></div>
@@ -419,41 +403,7 @@ flex-wrap: wrap;
 <!--FIN BOTONERA-->
 
 
-
-
-<!--KALENDARIO-->
-<section style="margin-bottom:3rem" >
-<div class="titulos" style="left:3%; margin: 2rem 0 2rem 0rem;">CALENDARIO</div>
-<div class="columnas">
-<!--CONTENIDO-->
-<div class="FRAME calendario">
-<div id="kal01" class="" ><a class="promo" href="http://www.katiadental.com/cadenitas-elasticas-c2x25561646">
-<ul class="marcopromo">
-<li class="titulos titulospromo promomain">Cadenitas elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE430-101</li></ul></a></div>
-</div>
-
-<!--SPACE-->
-<div><img class="blank" src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="300" height="15" align="center" border="0" style="display:block"/></div>
-<!--FIN SPACE-->
-
-<div class="FRAME calendario">
-<div id="kal02" class=""><a class="promo" href="http://www.katiadental.com/ligaduras-elasticas-c2x25559601">
-<ul class="marcopromo">
-<li class="titulos titulospromo promomain">Ligaduras elásticas</li><li class="titulos prix">25,70<span class="euro"> €</span></li><li class="titulos refe">OE404-00</li></ul></a></div>
-
-<!-- FIN CONTENIDO-->
-</div>
-</div>
-</section>
-<!--FIN KALENDARIO-->
-
-
-
-<script type="text/javascript" src="//localendar.com/js/PublishedResponsiveIframe.js"></script>
-<iframe style="width:100%"; id="localendar-iframe" src="//localendar.com/public/danielillo?style=M6"></iframe>
-
-
-
+<!--CARROUSEL NOVEDADES-->
 <section>
 <div class="titulos" style="left:3%">NOVEDADES
 </div>
@@ -572,7 +522,97 @@ flex-wrap: wrap;
 <!--FIN PROMOCAROUSEL-->
 
 </section>
+<!--FIN CARROUSEL NOVEDADES-->
 
+
+<!--AGENDA-->
+<section style="margin-bottom:3rem" >
+<div class="titulos" style="left:3%; margin: 2rem 0 2rem 0rem;">AGENDA</div>
+
+<div class="columnas" style="align-items: flex-start;">
+
+<!--CONTENIDO 02-->
+<div class="calendario">
+
+<div id="kal01" class="kalcontent" >
+<ul id="contenido01" class="marcopromo">
+
+<li class="" >
+<div class="kalen">
+<div class="kalen_date" style="background:#DD1D2A">
+<div class="kalen_dc1" style="padding-top:5px"><span style="font-weight:800;">MAYO</strong></div>
+<div class="kalen_dc2">11</div>
+<div class="kalen_dc1" style="padding-top:0px">Viernes</div>
+<div class="kalen_date horario horariosimple">
+<div class="kalen_dc1"><span style="font-weight:800;">HORARIO</span></div>
+<div class="kalen_hora"><span class="kalen_dc1">De </span>16<span class="kalen_dc1"> a </span>20</div>
+</div>
+<div class="kalen_date ciudad">
+<div class="kalen_title_sm">Málaga</div>
+</div>
+</div>
+
+
+<div id="cursoIPR" class="titulos titulospromo promomain" style="color:#DB1456; cursor:pointer;"><strong>Curso IPR</strong></div><br>
+<span class="titulos refe" style="line-height:130%;"><span style="font-weight:500; font-size:16px; color:#DB1456">Stripping interproximal, <br>
+toma de impresión y alineadores</span><br><br>
+<span class="titulos refe" style="line-height:130%;">Ponente: <strong>Dra. Giulia Fortini</strong><br><br>
+
+
+Cuota participación: 150€.<br>Reservas e información: <a href="mailto:cursos@ortoplus.es">cursos@ortoplus.es</a><br>Teléfono 952 21 21 74.<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" ><span style="text-decoration:underline; color:gray;">Enlace al formulario de inscripción.</span><br></a><br>
+<img style="margin-right: auto; margin-left: auto; display: block;" src="http://www.katiadental.com/Files/113993/Img/15/INTENSIVE-TRAY.jpg" alt="Bandeja IPR" width="350"></span></span>
+</div></li></ul>
+</div>
+</div>
+<!--FIN CONTENIDO 02-->
+<!--SPACE-->
+<div><img class="blank" src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="300" height="15" style="display:block; border: 0;"/></div>
+<!--FIN SPACE-->
+<!--CONTENIDO 01-->
+<div class="calendario">
+
+<div id="kal02" class="kalcontent" >
+<ul id="contenido02" class="marcopromo">
+
+<li class="" >
+<div class="kalen">
+<div class="kalen_date" style="background:#DD1D2A">
+<div class="kalen_dc1" style="padding-top:5px"><span style="font-weight:800;">JUNIO</span></div>
+<div class="kalen_dc2">29</div>
+<div class="kalen_dc1" style="padding-top:0px">Viernes</div>
+<div class="kalen_date horario">
+<div class="kalen_dc1"><span style="font-weight:800;">HORARIO</span></div>
+<div class="kalen_hora"><span class="kalen_dc1">De </span>9<span class="kalen_dc1"> a </span>14</div>
+<div class="kalen_dc1" >y de</div>
+<div class="kalen_hora" >15<span class="kalen_dc1"> a </span>18</div>
+</div>
+<div class="kalen_date ciudad">
+<div class="kalen_title_sm">Barcelona</div>
+</div>
+</div>
+
+
+<div class="titulos titulospromo promomain" ><a style="color:#2F66A8;" href="http://www.katiadental.com/PBCPPlayer.asp?ID=1940427"><strong>Curso M.A.D.</strong></a></div><br>
+<span class="titulos refe" style="line-height:130%;"><span style="font-weight:500; font-size:16px; color:#2F66A8">Mandibular Advanced Device<br>
+Anti-ronquidos</span><br><br>
+<span class="titulos refe" style="line-height:130%;">Dirigido a técnicos dentales.<br>
+Material necesario para el curso<br>a cargo de la empresa <strong>LEONE</strong>.<br>
+<a href="http://www.katiadental.com/kit-antirronquidos-forward-c2x25508810" ><span style="font-weight:500; color:#DD1D2A">REGALO: 2 kits extras Forward </span><br><span style="text-decoration:underline; color:gray">Ref. A5300-07.</span><br></a>Cuota participación: 490€.<br>
+Plazas limitadas, almuerzo incluido.<br>Reservas e información: <br>
+<a href="mailto:info@ktiadental.com">info@katiadental.com</a><br>Sr. Massimo Giorcelli, teléfono 93 490 06 00.<br><br>
+<img style="margin-right: auto; margin-left: auto; display: block;" src="http://www.katiadental.com/Files/113993/Img/21/LEONE_FORWARDb_D.jpg" alt="Forward" width="350"></span></span>
+</div></li></ul>
+</div>
+</div>
+<!--FIN CONTENIDO 01-->
+
+
+</div>
+</section>
+<!--FIN AGENDA-->
+
+
+<!--CARROUSEL PROMOS-->
 <section>
 <div class="titulos" style="left:3%">PROMOCIONES Y OFERTAS
 </div>
@@ -637,7 +677,9 @@ flex-wrap: wrap;
 <!--FIN PROMOCAROUSEL-->
 
 </section>
+<!--FIN CARROUSEL PROMOS-->
 
+<!--PRODUCTOS POR MARCA-->
 <section style="margin-bottom:3rem" >
 <!--PRODUCTOS POR MARCAS-->
 <div class="titulos" style="left:3%">PRODUCTOS POR MARCAS</div>
@@ -698,6 +740,7 @@ flex-wrap: wrap;
 <!-- FIN FILA 01-->
 <!--FIN PRODUCTOS POR MARCAS-->
 </section>
+<!--FIN PRODUCTOS POR MARCA-->
 
 <footer>
 
@@ -741,10 +784,12 @@ Crear tienda online con Xopie</a>
 
 <div>
 
+
+
 <script type="text/javascript">
 jQuery(document).ready(function($){
   
-  window.onload = setTimeout(function (){
+window.onload = setTimeout(function (){
     $(".bts-popup").delay(5000).addClass('is-visible');
 	}, 3000);
 
@@ -766,14 +811,25 @@ window.onload = setTimeout(function (){
     		$('.bts-popup').removeClass('is-visible');
 	    }
     });
+	
+	//open popup when clicking #cursoIPR
+	$(document).ready(function(){
+    $("#cursoIPR").click(function(){
+        $(".bts-popup").delay(10).addClass('is-visible');
+    });
+});
 });
 </script>
+
+
+
 
   
 <!--POPUP-->    
 <div class="bts-popup" role="alert">
 <div class="bts-popup-container" style="background:#"><a href="#" class="close" style="color:#000000" target="">×</a>
-<div class="FOLLETO is-visible" ><a class="titulos promomain" style="color:#ffffff; line-height: 150%; letter-spacing: 0.02em; font-weight:300;" href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" target=""> <img src="http://www.katiadental.com/Files/113993/Img/16/CURSO-STRIPPING.jpg" width="100%">Clic en el flyer para acceder al formulario de inscripción</a></div>
+<div class="FOLLETO is-visible" >
+<a class="titulos promomain" style="color:#ffffff; line-height: 150%; letter-spacing: 0.02em; font-weight:300;" href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" target=""> <img src="http://www.katiadental.com/Files/113993/Img/16/CURSO-STRIPPING.jpg" width="100%">Clic en el flyer para acceder al formulario de inscripción</a></div>
 </div> 
 </div>
   
