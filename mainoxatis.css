@@ -271,7 +271,7 @@ text-align:center;
 }
 li.titulos.titulospromo {
     height: 200px; 
-  }
+}
 .titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.15rem; flex-grow: 1;
 }
 .promomain {font-weight: 400;
@@ -537,7 +537,7 @@ flex-wrap: wrap;
 flex-flow: row wrap; 
 background-color: #f9f9f9;
 border: 1px solid #d7d7d7;
-width: 300px; 
+width: 320px; 
  
 /*min-width:380px; padding: 0 20px;border: 1px solid black;*/  
 border-radius: 6px; 
@@ -546,8 +546,8 @@ align-content: flex-start;}
 
 .blank {width: 30px;}
 
-.marcokalen {width:300px;}
-
+.marcokalen {width:320px;}
+.fotokalenfullwidth {margin-right: auto; margin-left: auto; display: block; width:300;}
 .kalen {
 min-height:58px;
 margin:12px 8px;
