@@ -525,6 +525,111 @@ font-size: 13px;
 background-color:#fff;
 }
 
+/*AGENDA*/
+
+.calendario {display:flex; 
+flex-wrap: wrap;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap; 
+background-color: #f9f9f9;
+border: 1px solid #d7d7d7;
+width: 100%; 
+min-width:380px; 
+/*padding: 0 20px;border: 1px solid black;*/  
+border-radius: 6px; 
+justify-content: center;
+align-content: flex-start;}
+
+.blank {width: 30px;}
+
+
+.kalen {
+min-height:58px;
+margin:12px 8px;
+font-family:'Encode Sans', sans-serif;
+}
+
+.kalen_date {
+-moz-border-radius: 4px 4px 0px 0px;
+-webkit-border-radius: 4px 4px 0px 0px;
+border-radius: 4px 4px 0px 0px;
+float:right;
+width:70px;
+min-height:66px;
+max-height: 66px;
+color:#fff;
+background:#ccc;
+font-size:18px;
+font-weight:bold;
+margin-left:4px;
+text-align:center;
+}
+.horario {background:#aaaaaa; min-height:92px;  -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
+.horariosimple {min-height:48px;}
+.ciudad {background:black; min-height:24px; margin-top: -5px; padding-top: 2px; border-radius: -moz-border-radius: 0px 0px 4px 4px;
+-webkit-border-radius: 0px 0px 4px 4px;
+border-radius: 0px 0px 4px 4px;}
+.kalen_dc1 {
+font-size:10px;
+font-family:'Encode Sans', sans-serif;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+-webkit-font-smoothing: antialiased;
+}
+
+.kalen_dc2 {
+padding: 0;
+font-size:22px;
+font-family:'Encode Sans', sans-serif;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+-webkit-font-smoothing: antialiased;
+}
+
+.kalen_hora {
+font-family:'Encode Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+font-size:16px; 
+}
+
+.kalen_title {
+font-family:'Encode Sans', sans-serif;
+font-size:22px;
+color:#5b8fc6;
+-webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px;
+}
+
+.kalen_time {
+font-family:'Encode Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+font-size:12px;
+color:#777;
+}
+
+div ul li div .promomain:hover {
+text-decoration:underline;
+}
+
+div ul li div .titulospromo {
+height:auto;
+}
+
+div ul li div .refe {
+margin:0;
+}
+.kalen_title_sm {
+font-size:14px;
+color:#FFFFFF; font-weight:500;
+}
+
+@media only screen and (max-width: 830px) {.blank {width: 500px;}
+
+}
+/*FIN AGENDA*/
+
 @media(max-width:90em){
 .FRAME {
 flex: 10%;
@@ -589,7 +694,10 @@ height: 170px;}*/
 .titulos3 {font-size: 16px;}
 .itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
 #jssor_2, #jssor_3 {height: 17rem;}
-.titulospromo {margin: -0.2rem auto auto auto; font-size:22px; height: 160px;}
+.titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
+li.titulos.titulospromo {
+    height: 160px;
+}
 .prix {margin: 1rem;
 height: 30px;
 line-height: 230%;
