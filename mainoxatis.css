@@ -288,18 +288,13 @@ li.titulos.titulospromo {
 .vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
 .ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
 
-#promo1 {-webkit-border-radius: 6;
--moz-border-radius: 6;
-border-radius: 6px; background-color: #f9f9f9; border: 1px solid #d7d7d7; background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
-background-repeat:no-repeat; background-position:center calc(50% - 12px); background-size: 100%}
-#promo2 {-webkit-border-radius: 6;
--moz-border-radius: 6;
-border-radius: 6px; background-color: #f9f9f9; border: 1px solid #d7d7d7; background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
-background-repeat:no-repeat; background-position:center calc(50% - 5px); background-size: 110%}
-#promo3 {-webkit-border-radius: 6;
--moz-border-radius: 6;
-border-radius: 6px; background-color: #f9f9f9; border: 1px solid #d7d7d7; background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
-background-repeat:no-repeat; background-position:center calc(50% + 5px); background-size: 90%}
+#promo1, #promo2, #promo3, #promo4, #promo5, #promo6, #promo7, #promo8, #promo9, #promo10, #promo11, #promo12 {-webkit-border-radius: 6; -moz-border-radius: 6; border-radius: 6px; background-color: #ededed; border: 1px solid #d7d7d7; background-repeat:no-repeat; }
+#promo1 { background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
+background-position:center calc(50% - 12px); background-size: 100%}
+#promo2 {background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
+background-position:center calc(50% - 5px); background-size: 110%}
+#promo3 {background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
+background-position:center calc(50% + 5px); background-size: 90%}
 #promo4 {-webkit-border-radius: 6;
 -moz-border-radius: 6;
 border-radius: 6px; background-color: #f9f9f9; border: 1px solid #d7d7d7; background-image: url(http://www.katiadental.com/Files/113993/Img/17/ORTHOTECH-RETRACTOR-OYDT155.gif) ;
