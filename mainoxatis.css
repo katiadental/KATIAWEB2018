@@ -327,15 +327,6 @@ background-position:center calc(50% + 5px); background-size: 90%}
  background-position: center calc(50% - 10px); background-size: 62%}
 
 
-#oferta01, #oferta02, #oferta03, #oferta04, #oferta05, #oferta06, #oferta07, #oferta08 {background-repeat:no-repeat;} 
-#oferta02 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta03 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta04 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta05 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta06 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-#oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
-
  /*FIN PRUEBA CONTENIDO HTML*/
 		
 .IMAGECOL{/*-ms-flex-preferred-size:100%;
@@ -547,8 +538,6 @@ border-radius: 6px;
 justify-content: center;
 align-content: flex-start;}
 
-.ofertas {border: 2px solid #DD2E42; box-sizing: border-box;} 
-.marcoferta {width:240px;}
 
 .blank {width: 30px;}
 
@@ -635,6 +624,18 @@ margin:0;
 font-size:14px;
 color:#FFFFFF; font-weight:500;
 }
+
+.ofertas {border: 2px solid #DD2E42; box-sizing: border-box;} 
+.marcoferta {width:240px;}
+#oferta01, #oferta02, #oferta03, #oferta04, #oferta05, #oferta06, #oferta07, #oferta08 {background-repeat:no-repeat;} 
+#oferta02 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta03 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta04 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta05 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta06 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+#oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
+
 
 @media only screen and (max-width: 830px) {.blank {width: 500px;}
 
