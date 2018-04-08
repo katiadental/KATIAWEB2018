@@ -282,7 +282,7 @@ li.titulos.titulospromo {
 }
 .promomain {font-weight: 400;
     font-size: 22px; line-height: 120%;} 
-.logoleone {background-image: url(http://www.katiadental.com/Files/113993/Img/11/LOGOLEONE-80px.png); background-repeat:no-repeat; width: 80px; float:right; margin-left:4px; min-height:80px;}
+.logoleone {background-image: url(http://www.katiadental.com/Files/113993/Img/11/LOGOLEONE-80px.png); background-repeat:no-repeat; width: 80px; float:right; margin-left:4px; min-height:40px;}
 .prix {font-size: 28px; color: red; font-weight:500; height: 0px; margin:0;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
 .refe {font-size: 14px; line-height: 120%;color: #848182; font-weight:300;}
@@ -628,6 +628,7 @@ color:#FFFFFF; font-weight:500;
 .ofertas {border: 2px solid #DD2E42; box-sizing: border-box;} 
 .marcoferta {width:240px;}
 #oferta01, #oferta02, #oferta03, #oferta04, #oferta05, #oferta06, #oferta07, #oferta08 {background-repeat:no-repeat;} 
+#oferta01 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
 #oferta02 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
 #oferta03 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
 #oferta04 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
