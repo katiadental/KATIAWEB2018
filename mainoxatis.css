@@ -287,7 +287,18 @@ li.titulos.titulospromo {
 .refe {font-size: 14px; line-height: 120%;color: #848182; font-weight:300;}
 .vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
 .ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
-
+.novedades {-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px; 
+  background:#DD2E42; 
+  cursor:pointer; 
+  color:#FFFFFF; 
+  font-style:italic; 
+  font-size:16px; 
+  width: 100px; 
+  padding: 4px 10px 4px 10px;
+  text-decoration: none; 
+  font-weight: 500;}
 #promo1, #promo2, #promo3, #promo4, #promo5, #promo6, #promo7, #promo8, #promo9, #promo10, #promo11, #promo12 {-webkit-border-radius: 6; -moz-border-radius: 6; border-radius: 6px; background-color: #ededed; border: 1px solid #d7d7d7; background-repeat:no-repeat; }
 #promo1 { background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
 background-position:center calc(50% - 12px); background-size: 100%}
