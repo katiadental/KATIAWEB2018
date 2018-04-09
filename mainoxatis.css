@@ -635,8 +635,8 @@ color:#FFFFFF; font-weight:500;
 #oferta04 {background-image:url(http://www.katiadental.com/Files/113993/Img/10/EDENTA-fresas.png); background-position: top left; height:250px; background-size: 40%;}
 #oferta05 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/EDENTA-Pulidores.png);}
 #oferta06 {background-image:url(http://www.katiadental.com/Files/113993/Img/15/EDENTA-SoftTissue.png); background-position: 80% calc(+105%);}
-#oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/OFERLAB-01-18.jpg); background-position: 50% 50%;}
-#oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/06/OFERCLI-01-18.jpg); background-position: 50% 50%;}
+#oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/OFERLAB-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
+#oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/06/OFERCLI-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
 
 
 @media only screen and (max-width: 830px) {.blank {width: 500px;}
