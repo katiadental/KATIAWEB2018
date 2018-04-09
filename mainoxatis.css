@@ -627,7 +627,7 @@ font-size:14px;
 color:#FFFFFF; font-weight:500;
 }
 
-.ofertas {border: 2px solid #265FA6; box-sizing: border-box; background: #FFFFFF} 
+.ofertas {border: 2px solid #989da; box-sizing: border-box; background: #FFFFFF} 
 .marcoferta {width:240px; position: absolute; left: 4px;}
 #oferta01, #oferta02, #oferta03, #oferta04, #oferta05, #oferta06, #oferta07, #oferta08 {background-repeat:no-repeat;} 
 #oferta01 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 140%; background-size: 80%;}
