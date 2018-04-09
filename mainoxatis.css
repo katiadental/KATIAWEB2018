@@ -283,7 +283,7 @@ li.titulos.titulospromo {
 .promomain {font-weight: 400;
     font-size: 22px; line-height: 120%;} 
 .logoleone {background-image: url(http://www.katiadental.com/Files/113993/Img/11/LOGOLEONE-80px.png); background-repeat:no-repeat; width: 80px; float:right; margin-left:4px; min-height:40px;}
-.logoedenta {background-image: url(http://www.katiadental.com/Files/113993/Img/05/EDENTA-80px.gif); background-repeat:no-repeat; width: 110px; float:right; margin-left:4px; min-height:40px;}
+.logoedenta {background-image: url(http://www.katiadental.com/Files/113993/Img/05/EDENTA-80px.gif); background-repeat:no-repeat; width: 110px; position: absolute; right: 0; min-height:40px;}
 .prix {font-size: 28px; color: red; font-weight:500; height: 0px; margin:0;}
 .euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
 .refe {font-size: 14px; line-height: 120%;color: #848182; font-weight:300;}
