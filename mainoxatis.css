@@ -723,10 +723,13 @@ font-size: 28px;}
 .eshopCart {display:none}
 #blocksearch {display:none}
 .logo {margin: 0.25rem 0 0 0.8rem;}
-}
-@media(max-width:33rem){
+#bodydata {width: 100%;}
 
+@media(max-width:33rem){
+.logo {margin: 0.25rem 0 0 0.8rem;}
 .vermas {display:none;}
+#bodydata {width: 100%;}
+
 }
 
 
