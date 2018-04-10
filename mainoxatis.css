@@ -720,7 +720,8 @@ font-size: 28px;}
 .euro {margin: 0rem;}
 .refe {font-size: 12px; margin: 0.5rem;}
 .vermas {font-size: 40px; margin: 0.25rem 0;}
-
+.eshopCart {display:none}
+#blocksearch {display:none}
 }
 @media(max-width:33rem){
 
