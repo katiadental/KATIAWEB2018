@@ -41,11 +41,11 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/katiadental/KATIAWEB2018/gh-pages/css/ionicons.css"/>
 
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jquery.js"></script>
-<script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/jquery-migrate.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
 <!--SCRIPT MENU
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/controls.js"></script>
 <!--SCRIPT MENU-->
-<!--MENU DESPLEGABLE HAMBURGER-->
+<!--MENU DESPLEGABLE HAMBURGER
 <script src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/scripts/ik-js.js"></script>
 <!--MENU DESPLEGABLE HAMBURGER-->
 <!--JSSOR SLIDER-->
@@ -61,7 +61,7 @@
 <style>
 body.PB {text-align:left;}
 /*MODAL POPUP*/
-.bts-popup {
+.bts-popup, .curso2popup {
 position: fixed;
 overflow:auto;
 left: 0;
@@ -76,7 +76,7 @@ visibility: hidden;
 transition: opacity 0.3s 0s, visibility 0s 0.3s;
 z-index: 9000;
 }
-.bts-popup.is-visible {
+.bts-popup.is-visible, .curso2popup.is-visible {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 1s 0s, visibility 1s 0s;
@@ -101,7 +101,7 @@ z-index: 9000;
   transition-duration: 0.3s;
 }
 
-.bts-popup .close {
+.bts-popup .close, .curso2popup .close {
 position: relative;
 top: 28px;
     right: -285px;
@@ -113,13 +113,13 @@ top: 28px;
   line-height: 0%;
   z-index:9999;
 }
-.bts-popup .close:hover {
+.bts-popup .close:hover, .curso2popup .close:hover {
   color: #1461A7;
 }
 
-.FOLLETO { opacity: 0;
+.FOLLETO, .cursoleaf { opacity: 0;
   visibility: hidden;}
-.FOLLETO.is-visible
+.FOLLETO.is-visible, .cursoleaf.is-visible
 {opacity: 1;
   visibility: visible;
 -webkit-animation: spin1 0.5s 1 linear;
@@ -152,7 +152,10 @@ animation: spin1 0.5s 1 linear;
 } 
 
 /*FIN MODAL POPUP*/
-	
+/*CURSO POPUP*/	
+
+
+/*FIN CURSO POPUP*/
 .header-login{
 /*width:40px;*/
 height:50px}
@@ -169,7 +172,7 @@ filter: saturate(120%) brightness(1);}
 #blocksearch .searchimg {
     display: none;}
 #headerInfoCart {
-    top: 1.1rem; right: 8rem; height: 30px;
+    top: 1.1rem; right: 11rem; height: 30px;
     padding: 0.5rem 0rem 0rem 2.5rem; -moz-filter: saturate(0) brightness(1);
 -o-filter: saturate(0) brightness(1);
 -ms-filter: saturate(0) brightness(1);
@@ -188,16 +191,15 @@ filter: saturate(120%) brightness(1);}
 flex-direction: column;
   text-align: center;*/}
 
-li.titulos.titulospromo {
-    height: 200px; 
-  }
+
 li.titulos.prix {
   }
 li.titulos.refe {
   }
 
+#cursoLeaf:hover {color:#585858;}
 
-
+a {text-decoration:none;}
 </style>
 
 </head>
@@ -230,12 +232,17 @@ li.titulos.refe {
 	</div></div></div>
 <!--END SHOPPING CART--> 
 <!--LOGIN-->
-<div class="header-login" >
-<a href="http://www.katiadental.com/PBZoneLogin.asp?CCode=21&CPID=1762244" class="ion-android-person">
+<div class="header-login" title="Usuarios" >
+<a href="http://www.katiadental.com/PBZoneLogin.asp?CCode=21&CPID=1762244" class="ion-android-person" >
 </a>
 </div>
 <!--END LOGIN-->
-
+<!--CONTACTO-->
+<div class="header-contact" title="Contacto 93 490 06 00">
+<a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1598197" class="ion-android-call" >
+</a>
+</div>
+<!--END CONTACTO-->
 <!--LOGO-->
 <div class="logo">
 <a href="http://www.katiadental.com/" title="Katiadental" rel="home"><img src="http://www.katiadental.com/Files/113993/Img/18/KATIA-LOGO-flat.png" alt="LogoKatia" width="180"></a>
@@ -277,6 +284,7 @@ li.titulos.refe {
 <li id="menu-item-06" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1906466">Instrucciones</a></li>
 <li id="menu-item-07" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1940427">Formación</a></li>
 <li id="menu-item-08" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1762244">Descargas</a></li>
+<li id="menu-item-09" class=""><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1598196">Empresa</a></li>
 </ul>
 </div>
 </div>
@@ -396,9 +404,9 @@ li.titulos.refe {
 
 <!--BOTONERA-->
 <section class="cabecera">
-<div class="itemscabecera cli icon cli"><a href="http://www.katiadental.com/clinica-c102x2625763" class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Clínica</span></a></div>
-<div class="itemscabecera lab icon labo"><a href="http://www.katiadental.com/laboratorio-c102x2625760"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Laboratorio</span></a></div>
-<div class="itemscabecera cat icon cata"><a href="https://view.publitas.com/katia-dental/catalogo-katia-2018"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Catálogo online</span></a></div>
+<div class="itemscabecera cli"><a href="http://www.katiadental.com/clinica-c102x2625763" class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Clínica&nbsp;&nbsp;</span><span class="ion-android-add-circle" style="font-size: 115%; vertical-align: middle;"></span></a></div>
+<div class="itemscabecera lab"><a href="http://www.katiadental.com/laboratorio-c102x2625760"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Laboratorio&nbsp;&nbsp;</span><span class="ion-android-cancel" style="font-size: 115%; vertical-align: middle;"></span></a></div>
+<div class="itemscabecera cat"><a href="https://view.publitas.com/katia-dental/catalogo-katia-2018"  class="titulos titulos3" style="color: #fff!important; margin: 0!important; font-weight:400!important; line-height:130%"><span>Catálogo online&nbsp;&nbsp;</span><span class="ion-ios-book" style="font-size: 115%; vertical-align: middle;"></span></a></div>
 </section>
 <!--FIN BOTONERA-->
 
@@ -451,7 +459,7 @@ li.titulos.refe {
 
 <div id="promo7" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/brackets-aquasl-c102x3482976">
 <ul class="marcopromo">
-<li class="titulos titulospromo"><span class="titulospromo promomain">Brackets cerámica</span> AquaSL</li>
+<li class="titulos titulospromo"><span class="titulospromo promomain">Brackets S.L. cerámica autoligable</span> AquaSL</li>
 <li class="titulos prix" >265<span class="euro"> €</span></li><li class="titulos refe" >LF5740-91</li></ul></a></div>
 
 <div id="promo8" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/photopol-pro-c2x16559025">
@@ -469,7 +477,7 @@ li.titulos.refe {
 
 <div id="promo11" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/-bandeja-intensiv-tray-c2x23400060">
 <ul class="marcopromo">
-<li class="titulos titulospromo"><span class="promomain">Bandeja</span><br>Intensive Tray</li><li class="titulos prix" >172,50<span class="euro"> €</span></li><li class="titulos refe" >KL-OST400-070</li></ul></a></div>
+<li class="titulos titulospromo"><span class="promomain">Bandeja</span><br>Intensiv Tray</li><li class="titulos prix" >172,50<span class="euro"> €</span></li><li class="titulos refe" >KL-OST400-070</li></ul></a></div>
 
 <div id="promo12" data-fillmode="1" data-p="75.00"><a class="promo" href="http://www.katiadental.com/kit-de-limas-doble-c2x24488347">
 <ul class="marcopromo">
@@ -531,20 +539,20 @@ li.titulos.refe {
 
 <div class="columnas" style="align-items: flex-start;">
 
-<!--CONTENIDO 02-->
+<!--CONTENIDO 01-->
 <div class="calendario">
 
 <div id="kal01" class="kalcontent" >
-<ul id="contenido01" class="marcopromo">
+<ul id="contenido01" class="marcopromo marcokalen">
 
-<li class="" >
+<li>
 <div class="kalen">
 <div class="kalen_date" style="background:#DD1D2A">
-<div class="kalen_dc1" style="padding-top:5px"><span style="font-weight:800;">MAYO</strong></div>
+<div class="kalen_dc1" style="padding-top:5px;font-weight:800;">MAYO</div>
 <div class="kalen_dc2">11</div>
 <div class="kalen_dc1" style="padding-top:0px">Viernes</div>
 <div class="kalen_date horario horariosimple">
-<div class="kalen_dc1"><span style="font-weight:800;">HORARIO</span></div>
+<div class="kalen_dc1" style="font-weight:800;">HORARIO</div>
 <div class="kalen_hora"><span class="kalen_dc1">De </span>16<span class="kalen_dc1"> a </span>20</div>
 </div>
 <div class="kalen_date ciudad">
@@ -554,25 +562,69 @@ li.titulos.refe {
 
 
 <div id="cursoIPR" class="titulos titulospromo promomain" style="color:#DB1456; cursor:pointer;"><strong>Curso IPR</strong></div><br>
-<span class="titulos refe" style="line-height:130%;"><span style="font-weight:500; font-size:16px; color:#DB1456">Stripping interproximal, <br>
+<span class="titulos refe" style="line-height:130%; font-weight:500; font-size:16px; color:#DB1456">Stripping interproximal,<br>
 toma de impresión y alineadores</span><br><br>
 <span class="titulos refe" style="line-height:130%;">Ponente: <strong>Dra. Giulia Fortini</strong><br><br>
 
 
-Cuota participación: 150€.<br>Reservas e información: <a href="mailto:cursos@ortoplus.es">cursos@ortoplus.es</a><br>Teléfono 952 21 21 74.<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" ><span style="text-decoration:underline; color:gray;">Enlace al formulario de inscripción.</span><br></a><br>
-<img style="margin-right: auto; margin-left: auto; display: block;" src="http://www.katiadental.com/Files/113993/Img/15/INTENSIVE-TRAY.jpg" alt="Bandeja IPR" width="350"></span></span>
+Cuota participación: 150€.<br>Reservas e información: <a href="mailto:cursos@ortoplus.es">cursos@ortoplus.es</a><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" ><span style="text-decoration:underline; color:gray;">Enlace al formulario de inscripción.</span></a><br>
+<span class="ion-android-call"> 952 21 21 74</span><br><br>
+<img class="fotokalenfullwidth" src="http://www.katiadental.com/Files/113993/Img/15/INTENSIVE-TRAY.jpg" alt="Bandeja IPR"></span></span>
 </div></li></ul>
+</div>
+</div>
+<!--FIN CONTENIDO 01-->
+<!--SPACE-->
+<div><img class="blank" src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="300" height="15" style="display:block; border: 0;"/></div>
+<!--FIN SPACE-->
+<!--CONTENIDO 02-->
+<div class="calendario">
+<div id="" class="kalcontent" >
+<ul id="contenido02" class="marcopromo marcokalen">
+
+<li class="" >
+<div class="kalen">
+<div class="kalen_date" style="background:#DD1D2A">
+<div class="kalen_dc1" style="padding-top:5px;font-weight:800;">JUNIO</div>
+<div class="kalen_dc2">2</div>
+<div class="kalen_dc1" style="padding-top:0px">Sábado</div>
+<div class="kalen_date ciudad" style=" margin-top: 0px;">
+<div class="kalen_title_sm">Alicante</div>
+</div>
+</div>
+
+<div id="cursoLeaf" class="titulos titulospromo promomain" style="color:#585858; cursor:pointer;"><strong>Curso LEAF EXPANDER</strong></div><br>
+
+<div>
+<p class="titulos refe" style="line-height:130%; font-weight:500; font-size:16px; color:#585858">Expansión Maxilar Progresiva</p><br>
+<p class="titulos refe" style="line-height:130%;">Olvídate de la activación.<br>Principios técnicos y casos clínicos</p>
+<p class="titulos refe">Patrocinado por <strong>LEONE</strong>.</p>
+<p class="titulos refe"><strong>Dr. Claudio Lanteri</strong> - 
+<strong>Dra. Valentina Lanteri</strong></p><br>
+<p class="titulos refe">Traducción simultánea</p>
+<p class="titulos refe">P.V.P. 170€, precio ClubOrtholab <strong>100 €</strong></p><img class="fotokalenfullwidth" style="width: 150px; float: right;" src="http://www.katiadental.com/Files/113993/Img/08/curso-ortholab-leafexpander.gif" alt="LeafExpander" >
+<p class="titulos refe">Reserva ya tu plaza abonando <strong>50 €</strong>.</p><br>
+<p class="titulos refe"><a href="http://ortholablessons.es/expansion-maxilar-progresiva-leaf-expander-olvidate-la-activacion-principios-teoricos-casos-clinicos/#et_pb_contact_form_0"><span style="text-decoration:underline; color:gray;">Enlace al formulario de inscripción</span></a></p>
+<p class="titulos refe">Contacto:</p>
+<p class="titulos refe"><span class="ion-android-call"> 96 631 31 08</span></p>
+<p class="titulos refe"><span class="ion-social-whatsapp-outline"> 688 70 98 88</span></p>
+<p class="titulos refe"><a href="mailto:lessons@ortholablessons.es">lessons@ortholablessons.es</a></p>
+</div>
+</div>
+</li>
+
+</ul>
 </div>
 </div>
 <!--FIN CONTENIDO 02-->
 <!--SPACE-->
 <div><img class="blank" src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="300" height="15" style="display:block; border: 0;"/></div>
 <!--FIN SPACE-->
-<!--CONTENIDO 01-->
+<!--CONTENIDO 03-->
 <div class="calendario">
 
-<div id="kal02" class="kalcontent" >
-<ul id="contenido02" class="marcopromo">
+<div id="" class="kalcontent" >
+<ul id="contenido03" class="marcopromo marcokalen">
 
 <li class="" >
 <div class="kalen">
@@ -593,19 +645,19 @@ Cuota participación: 150€.<br>Reservas e información: <a href="mailto:cursos
 
 
 <div class="titulos titulospromo promomain" ><a style="color:#2F66A8;" href="http://www.katiadental.com/PBCPPlayer.asp?ID=1940427"><strong>Curso M.A.D.</strong></a></div><br>
-<span class="titulos refe" style="line-height:130%;"><span style="font-weight:500; font-size:16px; color:#2F66A8">Mandibular Advanced Device<br>
-Anti-ronquidos</span><br><br>
+<span class="titulos refe" style="line-height:130%; font-weight:500; font-size:16px; color:#2F66A8">Mandibular Advanced Device<br>
+Anti-ronquidos<br><br>
 <span class="titulos refe" style="line-height:130%;">Dirigido a técnicos dentales.<br>
 Material necesario para el curso<br>a cargo de la empresa <strong>LEONE</strong>.<br>
 <a href="http://www.katiadental.com/kit-antirronquidos-forward-c2x25508810" ><span style="font-weight:500; color:#DD1D2A">REGALO: 2 kits extras Forward </span><br><span style="text-decoration:underline; color:gray">Ref. A5300-07.</span><br></a>Cuota participación: 490€.<br>
 Plazas limitadas, almuerzo incluido.<br>Reservas e información: <br>
-<a href="mailto:info@ktiadental.com">info@katiadental.com</a><br>Sr. Massimo Giorcelli, teléfono 93 490 06 00.<br><br>
-<img style="margin-right: auto; margin-left: auto; display: block;" src="http://www.katiadental.com/Files/113993/Img/21/LEONE_FORWARDb_D.jpg" alt="Forward" width="350"></span></span>
+<a href="mailto:info@ktiadental.com">info@katiadental.com</a><br>
+Sr. Massimo Giorcelli, <span class="ion-android-call"> 93 490 06 00</span><br><br>
+<img class="fotokalenfullwidth" src="http://www.katiadental.com/Files/113993/Img/21/LEONE_FORWARDb_D.jpg" alt="Forward" ></span></span>
 </div></li></ul>
 </div>
 </div>
-<!--FIN CONTENIDO 01-->
-
+<!--FIN CONTENIDO 02-->
 
 </div>
 </section>
@@ -624,16 +676,159 @@ Plazas limitadas, almuerzo incluido.<br>Reservas e información: <br>
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://rawgit.com/katiadental/KATIAWEB2018/gh-pages/img/double-tail-spin.svg" alt0"Tempo"/>
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1370px;height:290px;overflow:hidden;">
-<div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736700"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/02/PROMO09.jpg" alt="NovedadesEdenta" title="Acabado circonio" /></a></div>
-<!--<div data-fillmode="1" data-p="75.00"><a href="#"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/20/PROMO08.jpg" /></a></div>-->
+<!--<div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736700"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/02/PROMO09.jpg" alt="NovedadesEdenta" title="Acabado circonio" /></a></div>
+<div data-fillmode="1" data-p="75.00"><a href="#"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/20/PROMO08.jpg" /></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766358"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/05/PROMO07.jpg" alt="SoftTissue" title="Soft Tissue"></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736708"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/15/PROMO06.jpg" alt="CadCamZirconio" title="Cad Cam Circonio"></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1692390"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/17/PROMO05.jpg" alt="OfertasClínica" title="Ofertas clínica" /></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1692391"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/PROMO04.jpg" alt="OfertasLaboratorio" title="Ofertas Laboratorio"></a></div>
-<div data-fillmode="1" data-p="75.00"><a href="https://view.publitas.com/katia-dental/mini-tornillo-ragno/"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/19/PROMO03.jpg" alt="MiniRagno" title="Mini tornillo Ragno" /></a></div>
+<!--<div data-fillmode="1" data-p="75.00"><a href="https://view.publitas.com/katia-dental/mini-tornillo-ragno/"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/19/PROMO03.jpg" alt="MiniRagno" title="Mini tornillo Ragno" /></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="https://view.publitas.com/katia-dental/disyuntor-rapido-anat-mico-leone/"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/13/PROMO02.jpg" alt="DisyuntorRápido" title="Duisyuntor rápido anatómico" /></a></div>
 <div data-fillmode="1" data-p="75.00"><a href="https://www.leone.it/espanol/ortodoncia/novedades/mad.php"><img data-u="image" src="http://www.katiadental.com/Files/113993/Img/06/PROMO01.jpg" alt="Ortodoncia" title="Novedades Ortodoncia" /></a></div>
-            </div>
+
+
+<!--PROMO RAGNO-->
+<div class="calendario ofertas"><a href="https://view.publitas.com/katia-dental/mini-tornillo-ragno/">
+
+<div id="oferta01" class="marcopromo">
+
+<div class="kalen" >
+<div class="logoleone">
+</div>
+
+<div id="" class="novedades">NOVEDADES</div><br>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:35px; line-height:100%; top:20px">Mini tornillo Ragno</div><br>
+<div class="titulos refe" style="float:right; text-align: right; margin-bottom: 2px; position: absolute; bottom: 4px; right: 6px;">LA0625-07</div>
+<div class="titulos titulospromo" style="line-height:130%; font-weight:400; top:30px;">Disyuntor<br>en abanico<br>7 mm</div>
+</div>
+
+</div></a>
+</div>
+<!--FIN PROMO RAGNO-->
+
+
+<!--DISYUNTOR-->
+<div class="calendario ofertas"><a href="https://view.publitas.com/katia-dental/disyuntor-rapido-anat-mico-leone/">
+
+<div id="oferta02" class="marcopromo">
+
+<div class="kalen" >
+<div class="logoleone">
+</div>
+
+<div id="" class="novedades">NOVEDADES</div><br>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:35px; line-height:100%; top:20px;">Disyuntor rápido anatómico</div><br>
+<div class="titulos refe" style="float:right; text-align: right; margin-bottom: 2px; position: absolute; bottom: 4px; right: 6px;">LA0630</div>
+<div class="titulos titulospromo" style="line-height:130%; font-weight:400; top:20px;">Con brazos<br>ortogonales</div>
+</div>
+
+</div></a>
+</div>
+<!--FIN DISYUNTOR-->
+
+
+<!--ORTODONCIA-->
+<div class="calendario ofertas"><a href="https://www.leone.it/espanol/ortodoncia/novedades/mad.php">
+
+<div id="oferta03" class="marcopromo marcoferta">
+
+<div class="kalen" >
+<div class="logoleone">
+</div>
+
+<div id="" class="novedades">NOVEDADES</div><br>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:35px; line-height:100%">Ortodoncia</div><br>
+<div class="titulos refe" style="float:right; text-align: right; margin-bottom: 2px; position: absolute; bottom: 4px; right: 6px;">LA5100-07</div>
+<div class="titulos refe" style="margin-bottom: 2px; position: absolute; bottom: 4px; left: 8px;">LA5300-07</div>
+</div>
+
+</div></a>
+</div>
+<!--FIN ORTODONCIA-->
+
+
+<!--EDENTA 1-->
+<div class="calendario ofertas"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736700">
+
+<div id="oferta04" class="marcopromo marcoferta">
+
+<div class="kalen"><span class="soluciones">Soluciones</span>
+<div class="logoedenta">
+</div>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:40px; top:65px;"><br>Acabado de circonio no sinterizado</div><br>
+
+</div>
+
+</div></a>
+</div>
+<!--FIN EDENTA I-->
+
+<!--EDENTA 2-->
+<div class="calendario ofertas"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1736708">
+
+<div id="oferta05" class="marcopromo marcoferta">
+
+<div class="kalen"><span class="soluciones">Soluciones</span>
+<div class="logoedenta">
+</div>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:40px; top:36px;"><br>CAD CAM Circonio ZrO<sup style="font-size:22px">2</sup></div>
+<div class="titulos promomain" style="font-weight: 200; font-size:20px; top: 36px; margin:0!important;">Repasado sinterizado sin refrigeración de agua</div>
+</div>
+
+</div></a>
+</div>
+<!--FIN EDENTA 2-->
+
+
+<!--EDENTA 3-->
+<div class="calendario ofertas"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1766358">
+
+<div id="oferta06" class="marcopromo marcoferta">
+
+<div class="kalen">
+<div class="logoedenta" style="top:8px;">
+</div>
+
+<div class="titulos" style="font-weight: 200; margin: 0px!important; font-size:40px; top:36px;"><br>SOFT TISSUE</div>
+<div class="titulos promomain" style="font-weight: 200; font-size:20px; top: 36px; margin:0!important">Instrumento<br>para cortar<br>tejidos blandos</div>
+</div>
+
+</div></a>
+</div>
+<!--FIN EDENTA 3-->
+
+
+<!--OFERTAS LABORATORIO-->
+<div class="calendario ofertas"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1692391">
+
+<div id="oferta07" class="marcopromo marcoferta titulos promomain" style="font-weight: 300; margin: 0px!important; font-size:34px; line-height:110% ">
+OFERTAS LABORATORIO
+</div>
+
+</a>
+</div>
+<!--FIN OFERTAS LABORATORIO-->
+
+
+<!--OFERTAS CLINICA-->
+<div class="calendario ofertas"><a href="http://www.katiadental.com/PBCPPlayer.asp?ID=1692390">
+
+<div id="oferta08" class="marcopromo marcoferta titulos promomain" style="font-weight: 300; margin: 0px!important; font-size:34px; line-height:110%;">
+
+OFERTAS CLÍNICA
+</div>
+
+</a>
+</div>
+<!--FIN OFERTAS CLINICA-->
+
+
+</div>
 <!-- Bullet Navigator -->
 <div data-u="navigator" class="jssorb031" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:16px;height:16px;">
@@ -763,20 +958,20 @@ Aviso Legal</a>
 <li class="mitext menusep"><a class="menu" href="PBCPPlayer.asp?ID=1598197">
 Contacto</a>
 </li>
-<li class="miimg"><a class="menu" target="_blank" href="https://www.facebook.com/katiaproductosdentales?fref=ts"><img src="Files/113993/facebook.png"/></a>
+<li class="miimg"><a class="menu" target="_blank" href="https://www.facebook.com/katiaproductosdentales?fref=ts"><!--<img src="Files/113993/facebook.png"/>--><span class="ion-social-facebook" style="color:#FFFFFF; font-size:24px; vertical-align: middle;"></span></a>
 </li>
 <li class="miimg"><a class="menu" target="_blank" href="https://twitter.com/KatiaDental">
-<img src="Files/113993/twitter.png"/></a>
+<!--<img src="Files/113993/twitter.png"/>--><span class="ion-social-twitter" style="color:#FFFFFF; font-size:24px; vertical-align: middle;"></span></a>
 </li>
-<li class="miimg"><img src="Files/113993/payment.png"/></li>
+<li class="miimg"><img src="http://www.katiadental.com/Files/113993/payment.png"/></li>
 <li class="end">&nbsp;</li>
 </ul>
 </div>
 <div id="copyright">
-Copyright © 2014 - Informaciones legales de tu empresa</div>
+Copyright © 2014</div>
 <div id="poweredby">
-<a href="https://www.xopie.com" rel="nofollow" target="_blank">
-Crear tienda online con Xopie</a>
+<!--<a href="https://www.xopie.com" rel="nofollow" target="_blank">
+Crear tienda online con Xopie</a>-->
 </div>
 </div>
 </footer>
@@ -799,8 +994,8 @@ window.onload = setTimeout(function (){
 	
 	
 	//close popup
-	$('.bts-popup').on('click', function(event){
-		if( $(event.target).is('.close') || $(event.target).is('.bts-popup') || $(event.target).is('.bts-popup-container') ) {
+	$('.bts-popup, .curso2popup').on('click', function(event){
+		if( $(event.target).is('.close') || $(event.target).is('.bts-popup, .curso2popup') || $(event.target).is('.cursoleaf')|| $(event.target).is('.bts-popup-container') ) {
 			event.preventDefault();
 			$(this).removeClass('is-visible');
 		}
@@ -808,7 +1003,7 @@ window.onload = setTimeout(function (){
 	//close popup when clicking the esc keyboard button
 	$(document).keyup(function(event){
     	if(event.which=='27'){
-    		$('.bts-popup').removeClass('is-visible');
+    		$('.bts-popup, .curso2popup').removeClass('is-visible');
 	    }
     });
 	
@@ -817,14 +1012,20 @@ window.onload = setTimeout(function (){
     $("#cursoIPR").click(function(){
         $(".bts-popup").delay(10).addClass('is-visible');
     });
+	
+});
+
+	//open popup when clicking #cursoLEAF
+	$(document).ready(function(){
+    $("#cursoLeaf").click(function(){
+        $(".curso2popup").delay(10).addClass('is-visible');
+    });
+	
 });
 });
 </script>
 
 
-
-
-  
 <!--POPUP-->    
 <div class="bts-popup" role="alert">
 <div class="bts-popup-container" style="background:#"><a href="#" class="close" style="color:#000000" target="">×</a>
@@ -832,9 +1033,23 @@ window.onload = setTimeout(function (){
 <a class="titulos promomain" style="color:#ffffff; line-height: 150%; letter-spacing: 0.02em; font-weight:300;" href="https://docs.google.com/forms/d/e/1FAIpQLSfYUijreXzr-Q5knwPmywRMiFyqMN0JHDYkgPPbsl97V0aQjA/viewform" target=""> <img src="http://www.katiadental.com/Files/113993/Img/16/CURSO-STRIPPING.jpg" width="100%">Clic en el flyer para acceder al formulario de inscripción</a></div>
 </div> 
 </div>
-  
+<!--FIN POPUP-->
 
-<!--FIN POPUP--></div>
+  
+<!--CURSO POPUP-->    
+<div class="curso2popup" role="alert">
+<div class="bts-popup-container"><a href="#" class="close" style="color:#000000" target="">×</a>
+<div class="cursoleaf is-visible" >
+<a ><img src="http://www.katiadental.com/Files/113993/Img/07/CursoLeaf.jpg" width="100%"></a></div>
+</div> 
+</div>
+<!--FIN CURSO POPUP-->
+
+
+
+
+
+</div>
 
 </div>
 
