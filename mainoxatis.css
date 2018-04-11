@@ -538,7 +538,8 @@ box-sizing: border-box;
 /*min-width:380px; padding: 0 20px;border: 1px solid black;*/  
 border-radius: 6px; 
 justify-content: center;
-align-content: flex-start;}
+align-content: flex-start;
+text-align:left;}
 
 
 .blank {width: 30px;}
@@ -723,12 +724,10 @@ font-size: 28px;}
 .eshopCart {display:none}
 #blocksearch {display:none}
 .logo {margin: 0.25rem 0 0 0.8rem;}
-#bodydata {width: 100%;}
 }
 @media(max-width:33rem){
 .logo {margin: 0.25rem 0 0 0.8rem;}
 .vermas {display:none;}
-#bodydata {width: 100%;}
 
 }
 
