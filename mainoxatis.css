@@ -661,11 +661,12 @@ max-width: 12%;
 }
 
 @media(max-width:60em){
-#bodydata {width: 120%; margin:0;}
+#bodydata {/*width: 120%;*/ margin:0;}
 ul.subcatlist li {
 width: 45%;
 border: 1px solid #cccccc;
 margin: 5px;}
+#footermenu {width: 100%;}
 }
 @media(max-width:56em){
 /*.diapos { height: 50rem;}*/
