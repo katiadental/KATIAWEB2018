@@ -640,6 +640,11 @@ color:#FFFFFF; font-weight:500;
 #oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/OFERLAB-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
 #oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/06/OFERCLI-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
 
+#bodydata {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
 
 @media only screen and (max-width: 830px) {.blank {width: 500px;}
 
@@ -656,11 +661,12 @@ max-width: 12%;
 }
 
 @media(max-width:60em){
-	#bodydata {width: 120%; margin:0;}
-	ul.subcatlist li {
-    width: 45%;
-    border: 1px solid #cccccc;
-margin: 5px;}	}
+#bodydata {width: 120%; margin:0;}
+ul.subcatlist li {
+width: 45%;
+border: 1px solid #cccccc;
+margin: 5px;}
+}
 @media(max-width:56em){
 /*.diapos { height: 50rem;}*/
 .FRAME {
