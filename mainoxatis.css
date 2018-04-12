@@ -736,6 +736,8 @@ font-size: 28px;}
 .eshopCart {display:none}
 #blocksearch {display:none}
 .logo {margin: 0.25rem 0 0 0.8rem;}
+#bodydata {/*width: 120%;*/ margin:0;}
+#footermenu {width: 100%;}
 }
 @media(max-width:33rem){
 .logo {margin: 0.25rem 0 0 0.8rem;}
