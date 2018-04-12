@@ -655,7 +655,12 @@ max-width: 12%;
 .vermas {font-size: 24px; margin-top:0rem;}
 }
 
-
+@media(max-width:60em){
+	#bodydata {width: 120%; margin:0;}
+	ul.subcatlist li {
+    width: 45%;
+    border: 1px solid #cccccc;
+margin: 5px;}	}
 @media(max-width:56em){
 /*.diapos { height: 50rem;}*/
 .FRAME {
