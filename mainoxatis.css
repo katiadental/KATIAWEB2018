@@ -198,10 +198,11 @@ right:1.35rem; top: 1rem; font-size:36px;
 	}
 	
 /*.body.PB a:hover {color:#ffffff}
-ul .menu li:hover {color:#ffffff}*/
+ul .menu li:hover {color:#ffffff}
 body.PB a .ion-android-call:hover {color:#0394D6!important}
 body.PB a .ion-android-person:hover {color:#0394D6!important}
-.ion-android-person:hover {color:#0394D6!important}
+.ion-android-person:hover {color:#0394D6!important}*/
+a[href^="mailto"]:hover {color:#0394D6}
 
 .btn{background:green;
 color:#fff}
