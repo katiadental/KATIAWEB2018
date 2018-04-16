@@ -451,7 +451,7 @@ padding:0; color:#989da1;}
 .responsive-menu .menu-header li:hover { background-color:#61CBFF; color:#FFFFFF}
 .responsive-menu .menu-header li:hover .menu {color:#FFFFFF;}
 .responsive-menu .menu-header li a {margin: 0px; display: block; width: 100%; height: 100%;}
-
+.responsive-menu .menu-header li a:hover {color:#FFFFFF;}
 /*.responsive-menu .menu-header li:last-child{border-bottom:0}*/
 .expand{display:block!important}
 /*SUBMENU STYLE*/
