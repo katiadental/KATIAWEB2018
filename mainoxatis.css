@@ -309,8 +309,8 @@ li.titulos.titulospromo {
   font-weight: 500;}
 #promo0, #promo1, #promo2, #promo3, #promo4, #promo5, #promo6, #promo7, #promo8, #promo9, #promo10, #promo11, #promo12 {-webkit-border-radius: 6; -moz-border-radius: 6; border-radius: 6px; background-color: #ededed; border: 1px solid #d7d7d7; background-repeat:no-repeat; box-sizing: border-box;}
 
-#promo0 { background-image: url(http://www.katiadental.com/Files/113993/Img/13/LEONE-LOGO2018.png) ; background-color:#8499B3;
-background-position:center; background-size: 80%}
+#promo0 { background-image: url(http://www.katiadental.com/Files/113993/Img/13/LEONE-LOGO2018.png) ; background-color:#a3bfe0;
+background-position:center +63%; background-size: 80%}
 #promo1 { background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
 background-position:center calc(50% - 12px); background-size: 100%}
 #promo2 {background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
