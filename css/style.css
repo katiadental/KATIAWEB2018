@@ -1,139 +1,778 @@
+@charset "UTF-8";
+/* CSS Document */
 
-.wrapper {text-align:center; margin: 0; padding:0; background-color:#365984;  }
+*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;
+padding:0; text-decoration: none;}
+table{border-collapse:collapse;
+border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;
+font-weight:400}
+ol,ul,li{list-style:none; text-decoration:none;}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;
+font-weight:400}
+q:before,q:after{content:''}
+strong{font-weight:700}em{font-style:italic}
+a img{border:0}
+.aligncenter{display:block;
+margin:0 auto}
+.alignleft{float:left}
+.alignright{float:right}
+.wp-caption{border:1px solid #666;
+text-align:center;
+background:#ccc;
+padding:10px;
+margin:10px}
+.clear{clear:both;
+zoom:1}
+.container{position:relative;
+max-width:1e3px;
+margin:auto;
+padding:0 20px}
+.table{width:100%;
+height:100%;
+display:table}
 
-ul{
-	list-style-type: none;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-display: inline-block;
-z-index:9999;
 
+#wrap {min-height:100%;height:auto;margin:0;padding:0;overflow:hidden}
+/*BOTONES*/
+.cabecera {display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: space-between;
+justify-content: center;
+padding: 5rem 0rem 0rem 0rem;
+flex-grow: 1; flex-basis: 10%;}
+
+.itemscabecera {width: 20%;
+margin:1rem; 
+-webkit-border-radius: 6;
+-moz-border-radius: 6;
+border-radius: 6px;
+color: #ffffff;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+text-align:center;
+float:left;
+/*
+font-size:30px;
+font-weight:100;*/
+}
+  
+.itemscabecera.cli {
+background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#3498db', EndColorStr='#2980b9')";
+}
+.itemscabecera.lab {
+background: #5669ce;
+  background-image: -webkit-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -moz-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -ms-linear-gradient(top, #5669ce, #3848a1);
+  background-image: -o-linear-gradient(top, #5669ce, #3848a1);
+  background-image: linear-gradient(to bottom, #5669ce, #3848a1);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#5669ce', EndColorStr='#3848a1')";
+}
+.itemscabecera.cat {
+background: #46b76b;
+  background-image: -webkit-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -moz-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -ms-linear-gradient(top, #61a778, #2f7f49);
+  background-image: -o-linear-gradient(top, #61a778, #2f7f49);
+  background-image: linear-gradient(to bottom, #61a778, #2f7f49);
+  filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#61a778', EndColorStr='#2f7f49')";
 }
 
-li{
-	display: inline-block;
-	float: left;
-	/*margin: 01px;*/
+
+.itemscabecera.icon.cli span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/09/ICO_CLINI.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.labo span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/05/ICO_LABO.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
+}
+.itemscabecera.icon.cata span{
+padding-right: 50px;
+background: url(http://www.katiadental.com/Files/113993/Img/22/ICO_CATA.png) no-repeat 0px;
+background-size: 42px 32px;
+background-origin:padding-box;
+background-position:bottom right;
 }
 
-li a{
-	display: block;
-	min-width: 9rem;
-	height: 3rem;
-	font-family: Verdana;
-	color: #fff;
-	background: #365984;
-	line-height: 3rem;
-	text-decoration: none;
-	text-align: center;
+.itemscabecera a {margin: 0px; display: block; width: 100%; height: 100%;}
+/*FIN BOTONES*/
+
+.blockshortcut {top: 0.5rem; position: absolute; left: 13.5rem; border:0!important}
+
+
+/*TEXTOS*/
+.titulos {color: #848182;
+position: relative;
+font-family:'Encode Sans', sans-serif;
+font-size:50px;
+font-weight:100;
+margin: 2rem 0 4rem 0rem;
+line-height:100%;
+}
+.titulos2 {
+margin: 2rem 0 2rem 2rem; }
+.titulos3 {/*text-align:center;*/
+font-size:30px;
+color: #fff;
+margin: 0!important;
 }
 
-li a:hover{
-	background: rgba(0,191,255,0.7);
-	color: #fff;
-}
+.PBCurrency {
+    color: #DD1D2A;
+	font-family:'Encode Sans', sans-serif;
+	font-weight: 700;}
 
-li:hover ul li a{ font-size: 13px;
-	height: 2.857rem;
-	line-height: 2.857rem;
-	min-width: 9rem;
-	/*transition: 1s;*/
-}
+.itemlist .PBMainTxt {
+    color: #777777;
+    font-size: 16px;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}	
+.PBShortTxt {
+    font-family: 'Encode sans', sans serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;}
+.qtyBox {text-align:center;}
 
-li ul{
-	display: none;
-}
+.webblock .viewtbl:not(.viewtblsplitted) .sectiondata {
+    margin-top: 30px;
+}	
+.header{position:fixed;
+top:0;
+background-color:#fff;
+width:100%;
+height:70px;
+border-bottom: 1px solid #ccc;
+/*
+-webkit-box-shadow:0 2px 2px 0 #f5f5f5;
+-moz-box-shadow:0 2px 2px 0 #f5f5f5;
+box-shadow:0 2px 2px 0 #f5f5f5;*/
+font-family: 'Encode Sans', sans-serif;
+font-size:14px;
+z-index:1000; text-decoration:none;}
 
-li ul li{
-	display: block;
-	float: none;
-}
-
-li ul li a{
-	width: auto;
-	min-width: 100px;
-	padding: 0; 
-	background-color: rgba(222, 222, 222,0.9);
-	color: #575757;
-}
-
-ul li a:hover+.hide,.hide:hover{
-	display: block;
-}
-
-input[type="checkbox"]{
-	display: none;
-}
-
-input[type="checkbox"]:checked~#menu{
-	display: block;
-}
-
-.show-menu{
-	font-family: Verdana;
-	text-decoration: none;
-	color: #fff;
-	background: black;
-	text-align: center;
-	padding: 10px 0 px;
-	display: none;
-	line-height: 40px;
-}
-
-
-.logo img{height:4rem;
-width:auto;
+.logo {
+height:auto;
 display:block;
-padding:5px 10px; position:absolute; z-index:9999;
+padding:0;
+z-index:10000;
+margin:-1rem 0 0 0.8rem;
+}
+.header a {color: #989da1}
+.header a:hover {color: #ffffff}
+
+.header-login{position:absolute;
+right:1.35rem; top: 1rem; font-size:36px;
+}
+.header-contact {height: 50px; position: absolute;
+    right: 7.5rem;
+    top: 1rem;
+    font-size: 36px;
+	}
+	
+/*.body.PB a:hover {color:#ffffff}
+ul .menu li:hover {color:#ffffff}
+body.PB a .ion-android-call:hover {color:#0394D6!important}
+body.PB a .ion-android-person:hover {color:#0394D6!important}
+.ion-android-person:hover {color:#0394D6!important}*/
+a[href="mailto"]:hover {color:#0394D6}
+
+.btn{background:green;
+color:#fff}
+
+.mobile-nav {display:block; z-index:1000;}
+
+.diapos {height:310px; position:relative; left:0px; width:1300px; overflow:hidden; margin:0 auto; top:65px; visibility:hidden; }
+.panoslides {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:310px;overflow:hidden;}
+
+#jssor_2, #jssor_3 {position:relative; margin:0 auto; left:0px; width:1370px; height:290px; overflow:hidden; visibility:hidden; top:-10px;}
+
+.jssorb031 {bottom:10px;}
+
+#jssor_4 {display: none;
+}	
+/*SLIDERS*/
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#B7B7B7; stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#989da1;stroke-width:1500;stroke-miterlimit:0;}
+        .jssora051:hover {opacity:.4;}
+        .jssora051.jssora051dn {opacity:.5; }
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+/*jssor slider CAROUSEL loading skin double-tail-spin css*/
+
+ /*jssor slider arrow skin 052 css*/
+        .jssora052 {display:block;position:absolute;cursor:pointer; width:120px;height:55px;top:248px;right:25px;}
+        .jssora052 .a {fill:none;stroke:#000;stroke-width:360;stroke-miterlimit:10;}
+        .jssora052:hover {opacity:.8;}
+        .jssora052.jssora052dn {opacity:.5;}
+        .jssora052.jssora052ds {opacity:.3;pointer-events:none;}
+
+
+ /*PRUEBA CONTENIDO HTML*/
+
+.promo {display:flex;
+flex-direction: column;
+/*border: 1px solid #1C9BD7;
+margin:1rem;
+float:left;
+*/ 
+padding-top: 0.5rem; 
+flex-grow: 1;
+flex: 2 1 auto;
+flex-basis: 10%;
+max-width: 250px;
+min-height: 250px;
+color: #ffffff;
+text-decoration: none;
+text-align:center;
 }
 
-.login{position:absolute;
-right:1rem; display:inline-block;
-/*border-left:solid #f5f5f5 1px*/}
+li.titulos.titulospromo {
+    height: 200px; 
+}
+.titulospromo {font-weight:600; color: #848182; font-size: 20px; margin: -0.25rem 0.15rem; flex-grow: 1;
+}
+.promomain {font-weight: 400;
+    font-size: 22px; line-height: 120%;} 
+.logoleone {background-image: url(http://www.katiadental.com/Files/113993/Img/11/LOGOLEONE-80px.png); background-repeat:no-repeat; width: 80px; float:right; margin-left:4px; min-height:40px;}
+.logoedenta {background-image: url(http://www.katiadental.com/Files/113993/Img/05/EDENTA-80px.gif); background-repeat:no-repeat; width: 110px; position: absolute; right: 4px; min-height:40px; top: 36px;}
+.soluciones {text-align:right; color: #000000; position:absolute; right:0; top: 6px; margin: 0px 10px; font-size:22px;}
+.prix {font-size: 28px; color: red; font-weight:500; height: 0px; margin:0;}
+.euro {margin-left:0; font-weight:400; font-size: 18px; line-height: 60%;  }
+.refe {font-size: 14px; line-height: 120%;color: #848182; font-weight:300;}
+.vermas {text-align:right; font-weight: 700; margin: -0.25rem -1.55rem; color: #1C9BD7;}
+.ion-arrow-right-c {font-size:32px; position: relative; top: 5px;}
+.novedades {-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px; 
+  background:#DD2E42; 
+  cursor:pointer; 
+  color:#FFFFFF; 
+  font-style:italic; 
+  font-size:16px; 
+  position:absolute; 
+  padding: 4px 10px 4px 10px;
+  text-decoration: none; 
+  font-weight: 500;}
+#promo0, #promo1, #promo2, #promo3, #promo4, #promo5, #promo6, #promo7, #promo8, #promo9, #promo10, #promo11, #promo12, #promo13, #promo14, #promo15, #promo16, #promo17, #promo18 {-webkit-border-radius: 6; -moz-border-radius: 6; border-radius: 6px; background-color: #ededed; border: 1px solid #d7d7d7; background-repeat:no-repeat; box-sizing: border-box;}
 
-.login:hover svg,.header-login a:hover svg path,.header-login a:hover,.header-login svg:hover{fill:#ec3432}
+#promo0 { background-image: url(http://www.katiadental.com/Files/113993/Img/13/LEONE-LOGO2018.png) ; background-color:#a3bfe0;
+background-position:center +63%; background-size: 80%}
+#promo1 { background-image: url(http://www.katiadental.com/Files/113993/Img/01/cadenitas.png) ;
+background-position:center calc(50% - 12px); background-size: 100%}
+#promo2 {background-image: url(http://www.katiadental.com/Files/113993/Img/03/OT-LIGADURAS-D.png) ;
+background-position:center calc(50% - 5px); background-size: 110%}
+#promo3 {background-image: url(http://www.katiadental.com/Files/113993/Img/23/ORTHOTECH-RETRACTOR.gif) ;
+background-position:center calc(50% + 5px); background-size: 90%}
+#promo4 {background-image: url(http://www.katiadental.com/Files/113993/Img/17/ORTHOTECH-RETRACTOR-OYDT155.gif) ;
+ background-position:center; background-size: 90%}
+#promo5 {background-image: url(http://www.katiadental.com/Files/113993/Img/25/LEONE-FORWARDa-D.png) ;
+ background-position:center; background-size: 85%}
+#promo6 {background-image: url(http://www.katiadental.com/Files/113993/Img/06/LEONE_TELESCOPIC_D.png) ;
+ background-position:center; background-size: 90%}
+#promo7 {background-image: url(http://www.katiadental.com/Files/113993/Img/05/LF5750-91-D.png) ;
+ background-position:center; background-size: 50%}
+#promo8 {background-image: url(http://www.katiadental.com/Files/113993/Img/04/PHOTOPOLPRO-D.png);
+ background-position:center; background-size: 90%}
+#promo9 {background-image: url(http://www.katiadental.com/Files/113993/Img/21/PHOTOPOL-PRO-VACUUM-D.png);
+ background-position:center; background-size: 95%}	
+#promo10 {background-image: url(http://www.katiadental.com/Files/113993/Img/05/MAJOR_Ormalab85_5kg_D.png);
+ background-position: center calc(0% + 35px); background-size: 62%}
+#promo11 {background-image: url(http://www.katiadental.com/Files/113993/Img/02/INTENSIVE-TRAY-D.png);
+ background-position: center; background-size: 90%}
+#promo12 {background-image: url(http://www.katiadental.com/Files/113993/Img/07/Intensiv-OrthoStrips-KL070-D2.png);
+ background-position: center calc(50% - 10px); background-size: 62%}
+ 
+#promo13 {background-image: url(http://www.katiadental.com/Files/113993/Img/13/LEONE-Bandas-E6165-96-D.png);
+ background-position: center calc(70% - 10px); background-size: 85%}
+#promo14 {background-image: url(http://www.katiadental.com/Files/113993/Img/23/LEONE-Brackets-F6380-91.png);
+ background-position: center calc(60% - 10px); background-size: 70%}
+#promo15 {background-image: url(http://www.katiadental.com/Files/113993/Img/11/LEONE-INTERACTIVE-Z.jpg);
+ /*background-position: center calc(60% - 10px);*/ background-size: 100%}
+#promo16 {background-image: url(http://www.katiadental.com/Files/113993/Img/09/LEONE-tubos-F8311-16-D.png);
+ background-position: center calc(60% - 10px); background-size: 90%}
+#promo17 {background-image: url(http://www.katiadental.com/Files/113993/Img/13/LEONE-M2302-00-main.png);
+ background-position: center calc(55% - 10px); background-size: 68%}
+#promo18 {background-image: url(http://www.katiadental.com/Files/113993/Img/12/LEONE-P1156-00-D.png);
+ background-position: center calc(50% - 10px); background-size: 100%}
 
-.login svg,.header-login{
-/*width:40px;*/
-height:40px}
-
-.login svg{
-fill:#989da1;
-padding-top:13px}
 
 
-@media screen and (max-width: 760px){
 
-	ul{
-		position: static;
-		display: none;
-		z-index:9999;
-top: 45px;
-	}
+ /*FIN PRUEBA CONTENIDO HTML*/
+		
+.IMAGECOL{/*-ms-flex-preferred-size:100%;
+flex-basis:100%;
+max-width:100%; float:left; left:0%;*/
+display: block;
+position: relative;
+padding: 4px;
+min-width:50%;
+}
 
-	li{
-		margin-bottom: 01px;
-		z-index:9999;
-	}
+.IMAGECOL img {display:block; max-width:50%; margin:auto;/*max-height:100%;  margin-left:0%;*/ }
 
-	ul li, li a{
-		width: 100%;
-		z-index:9999;
-	}
+.FRAME {/*box-shadow: 0.075rem 0 0 0 #C9C9C9,0 0.075rem 0 0 #C9C9C9,0.075rem 0.075rem 0 0 #C9C9C9,0.075rem 0 0 0 #C9C9C9 inset,0 0.075rem 0 0 #C9C9C9 inset;
+display: -webkit-flex;
+display: -ms-flexbox; 
+display: flex; 
+overflow: hidden;
+-ms-flex-preferred-size:100%;
+flex-basis:100%;*/
+position: relative;
+float:left;
+background: #FFFFFF;
+max-height: 100%;
+justify-content: space-between;
+box-sizing:border-box;
+flex: 10%;
+max-width: 12%;
+}
 
-	.show-menu{
-		display: block;
-		z-index:9999;
-		height: 3.5rem;
-		line-height: 60px;
-		padding-right: 80px;
-text-align: right;
-	}
+.columnas {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+}
 
-.diapos {display:none;}
 
-.logo img{height:3rem;
+
+/*HAMBURGER*/
+.menu-btn{position:absolute;
+display:inline-block;
+right:4rem;
+top:1.65rem;
+cursor:pointer}
+
+.menu-btn div{
+position:absolute;
+left:-0.75rem;
+top:64%;
+/*padding-right:0.6rem;
+line-height:1.2;
+*/
+margin-top:-0.15em;
+font-size:18px;
+font-weight:200;
+vertical-align:middle;
+z-index:99}
+
+/*HAMBURGER STYLE*/
+.hamburger-box{position:relative; display:inline-block; width:40px;height:24px}
+.hamburger-inner{top:50%; display:block; margin-top:-2px}
+.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{position:absolute; width:30px; height:3px;transition-timing-function:ease;transition-duration:.15s;transition-property:transform;border-radius:4px;background-color:#989da1}
+.hamburger-inner:after,.hamburger-inner:before{display:block;content:""}
+.hamburger-inner:before{top:-10px}
+.hamburger-inner:after{bottom:-10px}
+.hamburger-box:hover .hamburger-inner, .hamburger-box:hover .hamburger-inner::before, .hamburger-box:hover .hamburger-inner::after {background:#0394D6;}
+
+
+.hamburger--spin .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
+.hamburger--spin .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
+.hamburger--spin .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
+.hamburger--spin.is-active .hamburger-inner{transition-delay:.12s;transition-timing-function:cubic-bezier(.215,.61,.355,1);transform:rotate(225deg)}
+.hamburger--spin.is-active .hamburger-inner:before{top:0;transition:top .1s ease-out,opacity .1s ease-out .12s;opacity:0}
+.hamburger--spin.is-active .hamburger-inner:after{bottom:0;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;transform:rotate(-90deg)}
+.hamburger--spin-r .hamburger-inner{transition-timing-function:cubic-bezier(.55,.055,.675,.19);transition-duration:.22s}
+.hamburger--spin-r .hamburger-inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}
+.hamburger--spin-r .hamburger-inner:after{transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19)}
+.hamburger--spin-r.is-active .hamburger-inner{transition-delay:.12s;transition-timing-function:cubic-bezier(.215,.61,.355,1);transform:rotate(-225deg)}
+.hamburger--spin-r.is-active .hamburger-inner:before{top:0;transition:top .1s ease-out,opacity .1s ease-out .12s;opacity:0}
+.hamburger--spin-r.is-active .hamburger-inner:after{bottom:0;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;transform:rotate(90deg); }
+
+
+/*MENU STYLE*/
+.responsive-menu{
+display:none;
+position:absolute;
+right:0;
+top:4.35rem;
+font-size:18px;
+font-weight:100;
+border-bottom:#ededed solid 1px;
+border-left:#ededed solid 1px;
+-webkit-box-shadow:0 2px 2px 0 #f5f5f5;
+-moz-box-shadow:0 2px 2px 0 #f5f5f5;
+box-shadow:0 2px 2px 0 #f5f5f5;
+border-top:#ededed solid 1px;
+width:12rem;
+box-sizing:border-box;
+background:#fff;
+}
+/*––––––––––––––––––––––*/
+.responsive-menu .menu-header{display:block}
+.responsive-menu .menu-header ul{background:#fff;
+position:relative;
+display:block}
+/*MENU BACKGROUND*/
+.responsive-menu .menu-header li{
+background:#fff;
+float:none;
+line-height:3.25rem;
+width:100%;
+text-align:center;
+border-bottom:#ededed solid 1px;
+position:relative;
+padding:0; color:#989da1;}
+
+.responsive-menu .menu-header li:hover { background-color:#61CBFF; color:#FFFFFF}
+.responsive-menu .menu-header li:hover .menu {color:#FFFFFF;}
+.responsive-menu .menu-header li a {margin: 0px; display: block; width: 100%; height: 100%;}
+/*.responsive-menu .menu-header li:last-child{border-bottom:0}*/
+.expand{display:block!important}
+/*SUBMENU STYLE*/
+.responsive-menu .menu-header li .sub-menu{display:none;
+font-size:15px; background-color:red;}
+.responsive-menu .menu-header li .sub-menu li{border-bottom:0;
+line-height:2.5rem; background-color:#d4f2ff;}
+.responsive-menu .menu-header li .sub-menu li:hover {background-color:#9be0ff;}
+/*+ - STYLE*/
+.open-menu-link{display:none;
+position:absolute;
+right:1.2rem;
+top:0;
+line-height:2.8rem;
+color:#989da1;
+font-size:24px;
+cursor:pointer}
+.open-menu-link:hover {color:#FFFFFF}
+.responsive-menu .menu-header li .visible{display:block}
+
+#footercontainer{
+border-top: 1px solid #ccc;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+#footermenu {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 960px;
+    min-height: 80px;
+}
+#fmenu{
+text-align: center;
+}
+
+#fmenu li{
+width: auto;
+margin: 0 15px;
+}
+#fmenu li.mitext a, #fmenu li.mitext span {
+    color: #666666;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#copyright, #poweredby{
+background: none;
+}
+
+#poweredby a span, #copyright span {
+    color: #666;
+}
+#cartContainer #listProductsArea {
+background-color: #fff;
+border:1px solid #ccc;
+}
+
+#cartContainer #listProductsArea .PBMainTxt{
+color: #000;
+font-weight: bold;
+font-size: 13px;
+}
+
+#popupContainer {
+background-color:#fff;
+}
+
+/*AGENDA*/
+
+.calendario {display:flex; 
+flex-wrap: wrap;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap; 
+background-color: #f9f9f9;
+border: 1px solid #d7d7d7;
+width: 320px; 
+box-sizing: border-box;
+/*min-width:380px; padding: 0 20px;border: 1px solid black;*/  
+border-radius: 6px; 
+justify-content: center;
+align-content: flex-start;
+text-align:left;}
+
+
+.blank {width: 30px;}
+
+.marcokalen {width:320px;}
+.fotokalenfullwidth {margin-right: auto; margin-left: auto; display: block; width:300px;}
+.kalen {
+min-height:58px;
+margin:12px 8px;
+font-family:'Encode Sans', sans-serif;
+}
+
+.kalen_date {
+-moz-border-radius: 4px 4px 0px 0px;
+-webkit-border-radius: 4px 4px 0px 0px;
+border-radius: 4px 4px 0px 0px;
+float:right;
+width:70px;
+min-height:66px;
+max-height: 66px;
+color:#fff;
+background:#ccc;
+font-size:18px;
+font-weight:bold;
+margin-left:4px;
+text-align:center;
+}
+.horario {background:#aaaaaa; min-height:92px;  -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
+.horariosimple {min-height:48px;}
+.ciudad {background:black; min-height:24px; margin-top: -5px; padding-top: 2px; border-radius: -moz-border-radius: 0px 0px 4px 4px;
+-webkit-border-radius: 0px 0px 4px 4px;
+border-radius: 0px 0px 4px 4px;}
+.kalen_dc1 {
+font-size:10px;
+font-family:'Encode Sans', sans-serif;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+-webkit-font-smoothing: antialiased;
+}
+
+.kalen_dc2 {
+padding: 0;
+font-size:22px;
+font-family:'Encode Sans', sans-serif;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+-webkit-font-smoothing: antialiased;
+}
+
+.kalen_hora {
+font-family:'Encode Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+font-size:16px; 
+}
+
+.kalen_title {
+font-family:'Encode Sans', sans-serif;
+font-size:22px;
+color:#5b8fc6;
+-webkit-font-smoothing: antialiased;
+text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px;
+}
+
+.kalen_time {
+font-family:'Encode Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+font-size:12px;
+color:#777;
+}
+
+div ul li div .promomain:hover {
+text-decoration:underline;
+}
+
+div ul li div .titulospromo {
+height:auto;
+}
+
+div ul li div .refe {
+margin:0;
+}
+.kalen_title_sm {
+font-size:14px;
+color:#FFFFFF; font-weight:500;
+}
+
+.ofertas {border: 2px solid #9FA5AD; box-sizing: border-box; background: #FFFFFF} 
+.marcoferta {width:240px; position: absolute; left: 4px;}
+#oferta01, #oferta02, #oferta03, #oferta04, #oferta05, #oferta06, #oferta07, #oferta08 {background-repeat:no-repeat;} 
+#oferta01 {background-image:url(http://www.katiadental.com/Files/113993/Img/17/RAGNO.png); background-position: 180% 120%; background-size: 80%; height: 250px;}
+#oferta02 {background-image:url(http://www.katiadental.com/Files/113993/Img/13/LEONE-DISYUNTOR-LA0630.png); background-position: bottom calc(+5%) right calc(-50%); }
+#oferta03 {background-image:url(http://www.katiadental.com/Files/113993/Img/01/LEONE-TORNILLOS-MAD.png); background-position: center calc(+80%); background-size: 90%; height:250px;}
+#oferta04 {background-image:url(http://www.katiadental.com/Files/113993/Img/10/EDENTA-fresas.png); background-position: top left; height:250px; background-size: 40%;}
+#oferta05 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/EDENTA-Pulidores.png);}
+#oferta06 {background-image:url(http://www.katiadental.com/Files/113993/Img/15/EDENTA-SoftTissue.png); background-position: 80% calc(+105%);}
+#oferta07 {background-image:url(http://www.katiadental.com/Files/113993/Img/21/OFERLAB-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
+#oferta08 {background-image:url(http://www.katiadental.com/Files/113993/Img/06/OFERCLI-01-18.jpg); background-position: 50% 85px; background-size: 90%;}
+
+#bodydata {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 830px) {.blank {width: 500px;}
 
 }
+/*FIN AGENDA*/
+
+@media(max-width:90em){
+.FRAME {
+flex: 10%;
+max-width: 12%;
+}
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 24px; margin-top:0rem;}
+}
+
+@media(max-width:60em){
+#bodydata {/*width: 120%;*/ margin:0;}
+ul.subcatlist li {
+width: 45%;
+border: 1px solid #cccccc;
+margin: 5px;}
+#footermenu {width: 100%;}
+}
+@media(max-width:56em){
+/*.diapos { height: 50rem;}*/
+.FRAME {
+flex: 18%;
+max-width: 25%; margin: 0.5rem;
+}
+.titulos3 {font-size:24px}
+.itemscabecera {margin: 4rem 1rem 1rem 0;}
+.cabecera {padding: 1rem 0rem 0rem 0rem ;}
+
+.itemscabecera.icon.cli span, .itemscabecera.icon.labo span, .itemscabecera.icon.cata span{
+padding-right: 40px;
+background-size: 34px auto;
+}
+.jssora052 {width: 300px; height: 122px; right:45px;}
+.vermas {font-size: 40px; margin-top:1rem;}
+.ion-arrow-right-c {font-size:42px; position: relative; top: 5px;}
+
+}
+
+
+@media(max-width:40em){
+.responsive-menu {
+    font-size: 24px;
+}
+.responsive-menu .menu-header li .sub-menu {
+    font-size: 20px;
+}
+.responsive-menu,.responsive-menu .menu-header,.responsive-menu .menu-header .menu{width:100%}
+.responsive-menu .menu-header li{text-align:center}
+.diapos { height: 26rem;}
+.panoslides {top:25px}
+
+.jssorb031 {bottom:0px;}
+/*.jssora052 {height:40px;}*/
+
+.FRAME {
+flex: 31%;
+max-width: 31%; margin: 0.15rem;
+}
+.IMAGECOL {border: 0.12rem solid #B8B8B8;
+border-radius: 0.25rem;}
+
+.itemscabecera {margin: 0.1rem; width: 26%; padding: 6px; }
+.cabecera {padding: 4rem 0rem 0rem 0rem ;}
+.titulos {
+font-size:30px;
+margin: 0.85rem 0 1.5rem 1rem; }
+.titulos2 {margin: 0.85rem 0 0.5556rem 1rem;}
+/*.jssor_2 {top: 0;
+height: 170px;}*/
+.titulos3 {font-size: 16px;}
+.itemscabecera.icon.cli span, .itemscabecera.icon.lab span, .itemscabecera.icon.cat span { background:none; padding-right: 0px;}
+#jssor_2, #jssor_3 {height: 17rem;}
+.titulospromo {margin: -0.2rem auto auto auto; font-size:22px;}
+li.titulos.titulospromo {
+    height: 160px;
+}
+.prix {margin: 1rem;
+height: 30px;
+line-height: 230%;
+font-size: 28px;}
+.euro {margin: 0rem;}
+.refe {font-size: 12px; margin: 0.5rem;}
+.vermas {font-size: 40px; margin: 0.25rem 0;}
+.eshopCart {display:none}
+#blocksearch {display:none}
+.logo {margin: 0.25rem 0 0 0.8rem;}
+#bodydata {width: 100%; margin:0;}
+#footermenu {width: 100%;}
+}
+@media(max-width:33rem){
+.logo {margin: 0.25rem 0 0 0.8rem;}
+.vermas {display:none;}
+
+}
+
+
+
+@media(min-width:1500px){
+	#jssor_4 {display: block; 
+}
+	#jssor_1 {display: none;
+}
+.cabecera {padding: 6rem 8rem 0rem 8rem ;}
 }
