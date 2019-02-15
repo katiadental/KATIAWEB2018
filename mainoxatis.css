@@ -84,6 +84,17 @@ background: #5669ce;
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient
     (startColorStr='#5669ce', EndColorStr='#3848a1')";
 }
+.itemscabecera.ort {
+background: #ced8ed; /* Old browsers */
+background: -moz-linear-gradient(top, #ced8ed 0%, #697f99 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ced8ed 0%,#697f99 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ced8ed 0%,#697f99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ced8ed', endColorstr='#697f99',GradientType=0 ); /* IE6-9 */
+background-image: -ms-linear-gradient(top, #ced8ed, #697f99);
+background-image: -o-linear-gradient(top, #ced8ed, #697f99);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ced8ed', EndColorStr='#697f99')";
+}
 .itemscabecera.cat {
 background: #46b76b;
   background-image: -webkit-linear-gradient(top, #61a778, #2f7f49);
